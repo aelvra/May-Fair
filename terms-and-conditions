@@ -238,4 +238,300 @@ footer a:hover{color:var(--text);}
       <div class="section-header"><span class="section-num">03A</span><h2>Legal Compliance &amp; Regulatory Status</h2></div>
       <ul class="clause-list">
         <li data-n="(a)"><span><strong>FSSAI Registration:</strong> May Fair Restaurant's FSSAI Basic Registration is currently <strong>in process</strong> under the Food Safety and Standards Act, 2006. Upon receipt, the FSSAI licence number will be displayed within the Application and on all food packaging as required by law. May Fair Restaurant affirms full compliance with applicable food safety standards during this interim period.</span></li>
-        <li data-n="(b)"><span><strong>GST Exemption:</strong> May Fair Restaurant is currently exempt from GST registration as annual turnover is below the threshold of ₹20 lakh per year under the CGST Act, 2017. This status will be updated in these Terms and within the Application if a
+        <li data-n="(b)"><span><strong>GST Exemption:</strong> May Fair Restaurant is currently exempt from GST registration as annual turnover is below the threshold of ₹20 lakh per year under the CGST Act, 2017. This status will be updated in these Terms and within the Application if and when GST registration becomes applicable.</span></li>
+        <li data-n="(c)"><span><strong>Consumer Protection Compliance:</strong> In accordance with the Consumer Protection (E-Commerce) Rules, 2020, a Grievance Officer has been designated for this Platform. Users may raise grievances related to platform operations, payment issues, or account matters by contacting: <a href="/cdn-cgi/l/email-protection#97e4e2e7e7f8e5e3d7f6f2fbe1e5f6b9f4f8fa"><span class="__cf_email__" data-cfemail="691a1c1919061b1d29080c051f1b08470a0604">[email&#160;protected]</span></a>. Grievances will be acknowledged and addressed within <strong>48 hours</strong> of receipt.</span></li>
+        <li data-n="(d)"><span><strong>IT Act Compliance:</strong> The Application and its operations comply with the Information Technology Act, 2000, and the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021.</span></li>
+      </ul>
+    </section>
+    <!-- 03-B -->
+    <section class="section" id="s3b">
+      <div class="section-header"><span class="section-num">03B</span><h2>DPDP Act 2023 Compliance</h2></div>
+      <div class="callout gold"><span class="callout-icon">§</span><div><strong>Digital Personal Data Protection Act, 2023 —</strong> Aelvra complies with the DPDP Act 2023 as applicable to the processing of digital personal data within India. The following disclosures are made in accordance with this Act.</div></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Data Fiduciary:</strong> Aelvra (Platform Operator) is the Data Fiduciary under the DPDP Act 2023, responsible for determining the purpose and means of processing your personal data.</span></li>
+        <li data-n="(b)"><span><strong>Consent:</strong> By registering and using this Application, you provide free, specific, informed, unconditional, and unambiguous consent for the processing of your personal data as described in the Privacy Policy and these Terms, in accordance with the DPDP Act 2023.</span></li>
+        <li data-n="(c)"><span><strong>Purpose Limitation:</strong> Data is collected and processed exclusively for order processing, account management, and service delivery. No data shall be processed for any other purpose, including marketing, without separate explicit consent.</span></li>
+        <li data-n="(d)"><span><strong>Data Principal Rights:</strong> As a Data Principal under the DPDP Act 2023, you have the right to Access, Correction, Erasure, Grievance Redressal, and Nomination. These rights are detailed and exercisable as described in Section 12 of the Privacy Policy.</span></li>
+        <li data-n="(e)"><span><strong>Data Protection Officer (DPO):</strong> For all matters relating to data protection, privacy, or exercise of your rights under the DPDP Act 2023, contact: <a href="mailto:support@aelvra.com">support@aelvra.com</a>. Grievances will be acknowledged and addressed within <strong>48 (forty-eight) hours</strong> of receipt.</span></li>
+        <li data-n="(f)"><span><strong>Notice:</strong> Data collected through this Application is used solely for the purpose of processing your food orders and managing your account. No personal data is used for marketing, profiling, or any commercial purpose beyond order fulfilment.</span></li>
+        <li data-n="(g)"><span><strong>Withdrawal of Consent:</strong> You may withdraw consent at any time by deleting your account or contacting Aelvra. Withdrawal of consent does not affect the lawfulness of processing prior to withdrawal, and may result in the inability to use the Application.</span></li>
+      </ul>
+    </section>
+    <section class="section" id="s4">
+      <div class="section-header"><span class="section-num">04</span><h2>User Account</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Responsibility:</strong> You are solely responsible for all activity under your account. Safeguard your login credentials and do not share them with any third party.</span></li>
+        <li data-n="(b)"><span><strong>Accuracy:</strong> Ensure that your registered name, email, mobile number, and delivery address are accurate and kept up to date at all times.</span></li>
+        <li data-n="(c)"><span><strong>Unauthorised Access:</strong> Notify Aelvra immediately at <a href="/cdn-cgi/l/email-protection#b2d9d3c0c6dbd9f2d3d7dec4c0d39cdbdc"><span class="__cf_email__" data-cfemail="0e656f7c7a67654e6f6b62787c6f206760">[email&#160;protected]</span></a> upon becoming aware of any unauthorised use of your account.</span></li>
+        <li data-n="(d)"><span><strong>Termination:</strong> Aelvra reserves the right to suspend or terminate your account at any time for violation of these Terms, fraudulent activity, or conduct deemed harmful to the Platform or Restaurant.</span></li>
+        <li data-n="(e)"><span><strong>Non-Transferable:</strong> Your account is personal and may not be assigned, transferred, or sold to any other person.</span></li>
+      </ul>
+    </section>
+
+    <!-- 05 -->
+    <section class="section" id="s5">
+      <div class="section-header"><span class="section-num">05</span><h2>Placing Orders</h2></div>
+      <div class="stat-row">
+        <div class="stat-item"><div class="stat-label">Minimum Order</div><div class="stat-value">₹100</div><div class="stat-sub">All order types</div></div>
+        <div class="stat-item"><div class="stat-label">Delivery Zone</div><div class="stat-value">Rohru</div><div class="stat-sub">PIN 171207 only</div></div>
+        <div class="stat-item"><div class="stat-label">Order Types</div><div class="stat-value">3</div><div class="stat-sub">Delivery · Takeaway · Dine-in</div></div>
+      </div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Minimum Order Value:</strong> A minimum order value of <strong>₹100 (Rupees One Hundred)</strong> applies to all orders regardless of order type.</span></li>
+        <li data-n="(b)"><span><strong>Order Types:</strong> The Application supports Delivery, Takeaway, and Dine-in. Available types are displayed at checkout.</span></li>
+        <li data-n="(c)"><span><strong>Order Confirmation:</strong> Placement of an order constitutes an offer to purchase. An order is confirmed only upon explicit acceptance by May Fair Restaurant. Until accepted, no binding contract for food preparation exists.</span></li>
+        <li data-n="(d)"><span><strong>Operating Hours:</strong> Orders can only be placed during May Fair Restaurant's active operating hours (<strong>10:00 AM – 10:00 PM daily</strong>, subject to change). Real-time open/closed status is displayed within the Application at all times. Order placement is automatically disabled when the Restaurant is closed. The reason for closure, where applicable, is displayed in-app.</span></li>
+        <li data-n="(e)"><span><strong>Order Accuracy:</strong> You are solely responsible for reviewing your order — including items, quantities, and veg/non-veg selection — before confirming. Once placed and accepted, modifications cannot be made through the Application.</span></li>
+        <li data-n="(f)"><span><strong>Menu Availability:</strong> All items are subject to availability. May Fair Restaurant may remove or modify menu items at any time without prior notice.</span></li>
+      </ul>
+    </section>
+
+    <!-- 06 -->
+    <section class="section" id="s6">
+      <div class="section-header"><span class="section-num">06</span><h2>Order Status Flow &amp; Real-Time Updates</h2></div>
+      <p>All order data is sourced in real time directly from May Fair Restaurant's operations. The following order lifecycle stages are reflected within the Application and delivered via push notification:</p>
+
+      <div class="flow">
+        <div class="flow-item">
+          <div class="flow-badge"><span class="dot"></span>Accepted</div>
+          <div class="flow-desc"><strong>Order Accepted —</strong> May Fair Restaurant has accepted your order. Food preparation begins immediately. After this point, cancellation is not guaranteed and is subject to Restaurant review.</div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-badge"><span class="dot"></span>Preparing</div>
+          <div class="flow-desc"><strong>Food Being Prepared —</strong> Your order is actively being prepared in the kitchen. All items are freshly made upon order confirmation. Refund is generally not possible once preparation has commenced.</div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-badge"><span class="dot"></span>Food Ready</div>
+          <div class="flow-desc"><strong>Food Ready —</strong> Your food is prepared and waiting. For <strong>Delivery</strong> orders, this means awaiting assignment of a delivery person. For <strong>Dine-in</strong> orders, this means your food is ready for serving — please check the Application and present yourself promptly.</div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-badge"><span class="dot"></span>Out for Delivery</div>
+          <div class="flow-desc"><strong>Delivery Boy Assigned —</strong> A delivery person has been assigned and is en route. You will receive the delivery person's contact number in the Application. An OTP for delivery verification will be visible in your notifications and on the orders screen.</div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-badge"><span class="dot"></span>Delivered</div>
+          <div class="flow-desc"><strong>Order Delivered —</strong> Confirmed upon your provision of the delivery OTP to the delivery person. For COD orders, cash payment is to be made at this point. A digital invoice is generated upon successful delivery.</div>
+        </div>
+      </div>
+
+      <div class="callout surface">
+        <span class="callout-icon">🔄</span>
+        <div><strong>Important:</strong> While push notifications are delivered automatically for each status update, the Application's order screen must be <strong>manually refreshed</strong> to reflect the latest real-time status. Users are advised to keep the Application open and refresh periodically during an active order.</div>
+      </div>
+    </section>
+
+    <!-- 07 -->
+    <section class="section" id="s7">
+      <div class="section-header"><span class="section-num">07</span><h2>Custom Instructions &amp; Order Modifications</h2></div>
+      <p>The Application allows Users to attach custom instructions to individual order items at checkout. These may include but are not limited to:</p>
+      <div class="callout gold">
+        <span class="callout-icon">✎</span>
+        <div>Examples of supported custom instructions: <strong>sugar-free, less sugar, extra lemon, chilled, less ice, spice level adjustment, less salt, no onion,</strong> custom messages, and similar preference-based modifications.</div>
+      </div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>User Responsibility:</strong> You are solely responsible for all custom instructions entered. May Fair Restaurant will prepare your order in accordance with the instructions you have provided. Once submitted and accepted, you are bound by your selections.</span></li>
+        <li data-n="(b)"><span><strong>Best Effort:</strong> May Fair Restaurant will endeavour to fulfil custom instructions to the best of its ability. However, fulfilment of all custom modifications is not guaranteed and is subject to operational feasibility.</span></li>
+        <li data-n="(c)"><span><strong>Post-Acceptance Modifications:</strong> If you wish to modify custom instructions after your order has been accepted, you must contact May Fair Restaurant <strong>immediately</strong> — as early as possible while the order is still in "Accepted" status — by calling the restaurant with your full Order ID and registered name. Modifications are accommodated on a best-effort basis and are not guaranteed once preparation has commenced.</span></li>
+        <li data-n="(d)"><span><strong>No Liability for Incorrect Instructions:</strong> Aelvra and May Fair Restaurant bear no liability for outcomes arising from incorrect, ambiguous, or incomplete custom instructions provided by the User.</span></li>
+      </ul>
+    </section>
+
+    <!-- 08 -->
+    <section class="section" id="s8">
+      <div class="section-header"><span class="section-num">08</span><h2>Pricing &amp; Payment</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Displayed Prices:</strong> All prices are in Indian Rupees (₹) and inclusive of all applicable charges unless stated otherwise. May Fair Restaurant may modify prices at any time without prior notice.</span></li>
+        <li data-n="(b)"><span><strong>Delivery Charges:</strong> Determined by May Fair Restaurant based on the delivery landmark selected at checkout. Applicable charges are displayed prior to order confirmation. Delivery within the immediate vicinity of the Restaurant may be offered free of charge at the Restaurant's discretion.</span></li>
+        <li data-n="(c)"><span><strong>GST:</strong> May Fair Restaurant is currently <strong>exempt from GST</strong> as its annual turnover is below the ₹20 lakh threshold under the CGST Act, 2017. No GST is charged on orders at this time. Should turnover exceed this threshold in future, GST registration will be obtained and applicable tax will be disclosed and included in the displayed price prior to checkout.</span></li>
+        <li data-n="(d)"><span><strong>Online Payment via Razorpay:</strong> Processed exclusively through Razorpay, a third-party payment gateway. By selecting online payment, you agree to Razorpay's <a href="https://razorpay.com/terms/" target="_blank">Terms of Service</a> and <a href="https://razorpay.com/privacy/" target="_blank">Privacy Policy</a>. A computer-generated receipt is made available in the Application immediately upon successful payment.</span></li>
+        <li data-n="(e)"><span><strong>Cash on Delivery (COD):</strong> Where enabled by May Fair Restaurant, cash is collected at the time of delivery. Upon successful delivery and OTP confirmation, a computer-generated digital invoice is issued within the Application. COD availability is at the Restaurant's sole discretion.</span></li>
+        <li data-n="(f)"><span><strong>Payment Failure:</strong> In the event of a failed online payment, no order is placed and no amount is deducted. In cases of erroneous deduction due to technical error, contact Aelvra immediately at <a href="/cdn-cgi/l/email-protection#462d2734322f2d0627232a303427682f28"><span class="__cf_email__" data-cfemail="c3a8a2b1b7aaa883a2a6afb5b1a2edaaad">[email&#160;protected]</span></a>.</span></li>
+      </ul>
+    </section>
+
+    <!-- 09 -->
+    <section class="section" id="s9">
+      <div class="section-header"><span class="section-num">09</span><h2>Delivery Terms</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Delivery Zone:</strong> Delivery is available <strong>exclusively within Rohru, Himachal Pradesh — PIN 171207</strong>, to pre-configured landmarks within the Application. Orders outside this zone cannot be placed for delivery.</span></li>
+        <li data-n="(b)"><span><strong>Delivery Personnel:</strong> All delivery staff are employed directly by May Fair Restaurant. They are not agents or employees of Aelvra. Aelvra bears no liability for the conduct or actions of delivery personnel.</span></li>
+        <li data-n="(c)"><span><strong>Delivery Timeframe:</strong> No guaranteed or fixed delivery time is committed. Delivery times vary based on order volume, preparation time, and other conditions. All food is freshly prepared upon order confirmation. Users are requested to remain patient and available.</span></li>
+        <li data-n="(d)"><span><strong>User Availability:</strong> You must remain <strong>reachable and available</strong> at your delivery address during the active order period. If the delivery person or restaurant staff is unable to reach you by phone while your order is in process, May Fair Restaurant will review the case and determine appropriate action at its sole discretion.</span></li>
+        <li data-n="(e)"><span><strong>Delivery Personnel Reachability:</strong> If your assigned delivery person does not answer a call, this may be because they are actively driving or in transit. Please allow reasonable time and attempt contact again. Delivery personnel contact details are visible in the Application once assigned.</span></li>
+        <li data-n="(f)"><span><strong>OTP Verification:</strong> An OTP for delivery confirmation will be sent via push notification and displayed on the Application's orders screen. <strong>You are solely responsible for providing this OTP to the delivery person.</strong> Order delivery is confirmed only upon successful OTP provision. Failure to provide the OTP will result in the order not being marked as delivered.</span></li>
+        <li data-n="(g)"><span><strong>Respect for Delivery Personnel:</strong> Users are required at all times to treat delivery personnel with courtesy and respect. Abusive, threatening, or disrespectful conduct toward delivery staff is a violation of these Terms and may result in account suspension.</span></li>
+        <li data-n="(h)"><span><strong>Failed Delivery:</strong> In the event of a failed delivery due to incorrect address, user unavailability, or reasons attributable to the User, May Fair Restaurant reserves the right to treat the order as completed. No refund obligation arises in such circumstances.</span></li>
+        <li data-n="(i)"><span><strong>Order Cancellation Due to Delivery Issues:</strong> In the event of persistent failure to contact the User or delivery person during an active delivery, or if significant operational difficulties arise, May Fair Restaurant staff reserve the right to cancel the order at their sole discretion. For online payment orders cancelled under such circumstances, the refund will be reviewed and processed in accordance with Section 12. The Restaurant's determination in such cases shall be final.</span></li>
+        <li data-n="(j)"><span><strong>Delivery Charges:</strong> Delivery charges, once a delivery attempt has been made, are non-refundable regardless of the order outcome.</span></li>
+      </ul>
+    </section>
+
+    <!-- 10 -->
+    <section class="section" id="s10">
+      <div class="section-header"><span class="section-num">10</span><h2>Dine-in &amp; Takeaway</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Location:</strong> May Fair Restaurant's location, including map coordinates, is provided within the Application. You may visit the restaurant directly for dine-in and takeaway orders.</span></li>
+        <li data-n="(b)"><span><strong>Food Ready Notification:</strong> For dine-in and takeaway orders, a push notification is sent when your food is ready. You are advised to check the Application at this time and proceed to the restaurant promptly.</span></li>
+        <li data-n="(c)"><span><strong>Large Dine-in Groups:</strong> For groups of <strong>10 or more persons</strong> for dine-in, a prior phone call to May Fair Restaurant is required for special arrangements. Restaurant staff may also contact you to confirm any specific requirements for your visit.</span></li>
+        <li data-n="(d)"><span><strong>Staff Communication:</strong> For any dine-in or takeaway matter, restaurant staff may contact you via phone for confirmation of your order or visit details. You are advised to remain reachable.</span></li>
+      </ul>
+    </section>
+
+    <!-- 11 -->
+    <section class="section" id="s11">
+      <div class="section-header"><span class="section-num">11</span><h2>Cancellation Policy</h2></div>
+
+      <div class="sub-head">Cancellation by User</div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span>A cancellation option is available within the Application <strong>prior to approval of your order by May Fair Restaurant</strong>. Once the Restaurant approves the order, the cancellation button is automatically removed from the Application.</span></li>
+        <li data-n="(b)"><span>Post-approval cancellation must be requested by contacting May Fair Restaurant directly via the Help &amp; Support section or the restaurant phone number in the Application, quoting your Order ID and registered name. Such cancellations are at the Restaurant's sole discretion and are not guaranteed.</span></li>
+        <li data-n="(c)"><span><strong>Once food preparation has commenced, cancellation is generally not possible.</strong> However, a cancellation request may still be submitted — May Fair Restaurant will review the case and determine the appropriate course of action, which may include a partial or no refund.</span></li>
+      </ul>
+
+      <div class="sub-head" style="margin-top:24px;">Cancellation by May Fair Restaurant</div>
+      <ul class="clause-list">
+        <li data-n="(d)"><span>May Fair Restaurant reserves the unconditional right to cancel any order — online or COD — at its sole discretion, for reasons including but not limited to item unavailability or operational constraints.</span></li>
+        <li data-n="(e)"><span>Upon Restaurant-initiated cancellation, a push notification and in-app message will be sent. A reason may be provided at the Restaurant's discretion.</span></li>
+        <li data-n="(f)"><span>For online payment orders cancelled by the Restaurant, a refund will be initiated per Section 12. For COD cancellations, no financial liability arises as no payment has been collected.</span></li>
+      </ul>
+
+      <div class="callout red"><span class="callout-icon">⚠</span><div><strong>Users are strongly advised to review their orders carefully before confirming.</strong> No guaranteed post-acceptance cancellation window exists. The sole guaranteed cancellation right is prior to Restaurant acceptance.</div></div>
+    </section>
+
+    <!-- 12 -->
+    <section class="section" id="s12">
+      <div class="section-header"><span class="section-num">12</span><h2>Refund Policy</h2></div>
+
+      <div class="callout surface"><span class="callout-icon">§</span><div><strong>In-app refund processing applies to online payment orders only.</strong> No in-app refund mechanism exists for COD transactions. COD refund matters, if any, are resolved manually and exclusively between the User and May Fair Restaurant.</div></div>
+
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Admin-Only Processing:</strong> All refunds — whether full, partial, or custom — are processed exclusively by the Aelvra admin upon written or confirmed approval from May Fair Restaurant. No refund is initiated without Restaurant authorisation.</span></li>
+        <li data-n="(b)"><span><strong>Gateway Charges Non-Refundable:</strong> Payment gateway fees charged by Razorpay are <strong>non-refundable</strong> in all circumstances, as per Razorpay's merchant policy and RBI guidelines governing payment intermediaries. The exact fee is determined by Razorpay at the time of transaction. Whether these charges are borne by the User or absorbed by May Fair Restaurant is determined by the Restaurant on a case-by-case basis.</span></li>
+        <li data-n="(c)"><span><strong>Refund Types:</strong> Approved refunds may be processed as <strong>full, partial, or custom amounts</strong> at the sole determination of May Fair Restaurant. In exceptional cases, custom refund amounts may be agreed upon through direct telephonic communication between the User and May Fair Restaurant.</span></li>
+        <li data-n="(d)"><span><strong>Wrong or Incorrect Items:</strong> In the event of receipt of an incorrect item, you must <strong>contact May Fair Restaurant immediately and promptly</strong>. Acting quickly significantly improves the possibility of exchange or refund. May Fair Restaurant will review the case and determine the resolution — which may include exchange, partial refund, or full refund. No in-app feature is available for wrong-item complaints; direct manual contact is required.</span></li>
+        <li data-n="(e)"><span><strong>Post-Preparation Refund:</strong> Once food preparation has commenced, refunds are generally not admissible. However, on-request review by May Fair Restaurant may be conducted in exceptional circumstances.</span></li>
+        <li data-n="(f)"><span><strong>Refund Receipt:</strong> Upon processing of an approved refund, a computer-generated refund receipt will be made available within the Application for online payment orders.</span></li>
+        <li data-n="(g)"><span><strong>Refund Timelines:</strong> Governed by Razorpay's processing standards and the User's banking institution. Aelvra and May Fair Restaurant bear no liability for delays caused by third-party financial institutions.</span></li>
+      </ul>
+    </section>
+
+    <!-- 13 -->
+    <section class="section" id="s13">
+      <div class="section-header"><span class="section-num">13</span><h2>Food, Menu &amp; Product Representations</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Fresh Preparation:</strong> May Fair Restaurant affirms that all food items are freshly prepared upon order confirmation. No pre-cooked or stored items are served.</span></li>
+        <li data-n="(b)"><span><strong>Veg / Non-Veg Segregation:</strong> May Fair Restaurant affirms that vegetarian and non-vegetarian items are handled, prepared, and packaged with strict operational separation. <strong>You are solely responsible for verifying your veg/non-veg selection before confirming your order.</strong></span></li>
+        <li data-n="(c)"><span><strong>Product Images:</strong> All food item images in the Application are for <strong>illustrative purposes only</strong>. Actual appearance, presentation, and portion size may differ. No warranty is made regarding image accuracy.</span></li>
+        <li data-n="(d)"><span><strong>Allergens:</strong> The Application does not provide detailed allergen information. Users with dietary restrictions, allergies, or medical conditions must contact May Fair Restaurant directly before ordering.</span></li>
+        <li data-n="(e)"><span><strong>Menu Changes:</strong> May Fair Restaurant may modify, add, or remove items and prices at any time without prior notice.</span></li>
+      </ul>
+    </section>
+
+    <!-- 14 -->
+    <section class="section" id="s14">
+      <div class="section-header"><span class="section-num">14</span><h2>Platform Availability &amp; Service Continuity</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>No Uptime Guarantee:</strong> The Application is provided on an "as is" and "as available" basis. Aelvra does not warrant uninterrupted or error-free availability.</span></li>
+        <li data-n="(b)"><span><strong>Restaurant Real-Time Status:</strong> May Fair Restaurant's open/closed status is displayed in real time. Order placement is automatically disabled when the Restaurant is closed. The reason for closure is displayed in-app where applicable.</span></li>
+        <li data-n="(c)"><span><strong>Maintenance:</strong> Aelvra may conduct scheduled or emergency maintenance during which the Application may be temporarily unavailable. Users will be informed where feasible.</span></li>
+        <li data-n="(d)"><span><strong>Order History:</strong> Orders older than <strong>3 (three) weeks</strong> may be cleared from the Application's interface for performance optimization. Complete order records are maintained by May Fair Restaurant for all disputes and legal requirements. Contact the Restaurant directly for historical order information.</span></li>
+        <li data-n="(e)"><span><strong>Service Discontinuation:</strong> In the event May Fair Restaurant ceases operations or terminates its engagement with Aelvra, users will be notified through the Application prior to closure.</span></li>
+      </ul>
+    </section>
+
+    <!-- 15 -->
+    <section class="section" id="s15">
+      <div class="section-header"><span class="section-num">15</span><h2>Intellectual Property</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Ownership:</strong> The Application, its design, code, interface, and all content are the exclusive intellectual property of Aelvra and/or May Fair Restaurant. All rights reserved.</span></li>
+        <li data-n="(b)"><span><strong>Limited Licence:</strong> You are granted a limited, non-exclusive, non-transferable, revocable licence to use the Application solely for personal, non-commercial food ordering purposes.</span></li>
+        <li data-n="(c)"><span><strong>Restrictions:</strong> You must not copy, reverse-engineer, decompile, or commercially exploit any part of the Application without prior written consent of Aelvra.</span></li>
+      </ul>
+    </section>
+
+    <!-- 16 -->
+    <section class="section" id="s16">
+      <div class="section-header"><span class="section-num">16</span><h2>Limitation of Liability &amp; Indemnification</h2></div>
+      <div class="callout red"><span class="callout-icon">§</span><div>To the maximum extent permitted by applicable law, Aelvra's aggregate liability to any User shall not exceed the value of the single order in respect of which the claim arose.</div></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Platform Role:</strong> Aelvra is a technology operator and is not a party to the food service transaction. Aelvra bears no liability for the quality, safety, or fitness of food prepared by the Restaurant.</span></li>
+        <li data-n="(b)"><span><strong>Delivery:</strong> Aelvra bears no liability for delivery delays, failures, or conduct of delivery personnel employed by May Fair Restaurant.</span></li>
+        <li data-n="(c)"><span><strong>Third-Party Services:</strong> Aelvra bears no liability for Razorpay, Google, or any other third-party service provider.</span></li>
+        <li data-n="(d)"><span><strong>Force Majeure:</strong> Neither Aelvra nor May Fair Restaurant shall be liable for failures caused by circumstances beyond their reasonable control.</span></li>
+        <li data-n="(e)"><span><strong>Indemnification:</strong> You agree to indemnify and hold harmless Aelvra and May Fair Restaurant from any claims, damages, or liabilities arising from your misuse of the Application, breach of these Terms, or violation of any applicable law.</span></li>
+      </ul>
+    </section>
+
+    <!-- 17 -->
+    <section class="section" id="s17">
+      <div class="section-header"><span class="section-num">17</span><h2>Prohibited Conduct</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span>Placing fraudulent, false, or fictitious orders with no intention to pay or receive.</span></li>
+        <li data-n="(b)"><span>Providing false identity information — name, phone number, or delivery address.</span></li>
+        <li data-n="(c)"><span>Attempting to hack, reverse-engineer, or interfere with the Application's security or infrastructure.</span></li>
+        <li data-n="(d)"><span>Harassing, abusing, or threatening Aelvra personnel, Restaurant staff, or delivery personnel. Delivery personnel must be treated with full courtesy and respect at all times.</span></li>
+        <li data-n="(e)"><span>Creating multiple accounts to abuse Platform features.</span></li>
+        <li data-n="(f)"><span>Using the Application for any purpose that violates applicable Indian law.</span></li>
+        <li data-n="(g)"><span><strong>Fraud &amp; Account Suspension:</strong> Engaging in fraudulent activity of any nature — including but not limited to chargeback fraud, identity fraud, or deliberate misuse of refund or cancellation mechanisms — will result in <strong>immediate and permanent account suspension</strong>. In serious cases, Aelvra and May Fair Restaurant reserve the right to pursue <strong>civil and/or criminal legal action</strong> under applicable Indian law without further notice.</span></li>
+        <li data-n="(h)"><span><strong>System Tampering &amp; Misleading Conduct:</strong> Any attempt to tamper with, manipulate, deceive, or exploit the Application's systems — including but not limited to submitting false or misleading information at scale, attempting to interfere with order processing, payment infrastructure, or data integrity — shall be treated as a <strong>serious legal violation</strong>. Aelvra reserves the right to take immediate legal action, including civil suit and criminal complaint, under the Information Technology Act, 2000, the Indian Penal Code, and all other applicable statutes. Such conduct will be reported to the appropriate authorities.</span></li>
+      </ul>
+    </section>
+
+    <!-- 18 -->
+    <section class="section" id="s18">
+      <div class="section-header"><span class="section-num">18</span><h2>Governing Law, Jurisdiction &amp; Dispute Resolution</h2></div>
+      <p>These Terms shall be governed by and construed in accordance with the laws of the <strong>Republic of India</strong>.</p>
+
+      <div class="callout blue"><span class="callout-icon">⚖</span><div><strong>Fast &amp; Affordable Resolution:</strong> Both parties agree to the following stepped dispute resolution process before initiating formal legal proceedings. Legal action is always a last resort.</div></div>
+
+      <div class="sub-head">Step 1 — Direct Resolution</div>
+      <p>In the event of any dispute, complaint, or claim arising out of or in connection with these Terms, the Services, or any order, you must first contact Aelvra at <a href="mailto:support@aelvra.com">support@aelvra.com</a> or May Fair Restaurant directly, as applicable, and attempt to resolve the matter through good-faith direct communication within <strong>15 (fifteen) days</strong> of raising the issue.</p>
+
+      <div class="sub-head" style="margin-top:24px;">Step 2 — Arbitration</div>
+      <p>If a dispute cannot be resolved through direct communication within 15 days, it shall be referred to and finally resolved by <strong>binding arbitration</strong> under the <strong>Arbitration and Conciliation Act, 1996</strong> (as amended), subject to the following terms:</p>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Arbitrator:</strong> A sole arbitrator, mutually agreed upon by the parties. If agreement cannot be reached within 10 days, the arbitrator shall be appointed in accordance with the provisions of the Arbitration and Conciliation Act, 1996.</span></li>
+        <li data-n="(b)"><span><strong>Venue &amp; Seat:</strong> The seat and venue of arbitration shall be <strong>Rohru, Himachal Pradesh</strong>.</span></li>
+        <li data-n="(c)"><span><strong>Language:</strong> Proceedings shall be conducted in English or Hindi.</span></li>
+        <li data-n="(d)"><span><strong>Costs:</strong> Arbitration costs (arbitrator's fees and administrative expenses) shall be split equally between the parties. For claims below <strong>₹1,00,000 (Rupees One Lakh)</strong>, total arbitration costs are capped at <strong>₹10,000 (Rupees Ten Thousand)</strong>.</span></li>
+        <li data-n="(e)"><span><strong>Award:</strong> The arbitration award shall be <strong>final and binding</strong> upon both parties. It shall not be subject to challenge except on grounds expressly permissible under the Arbitration and Conciliation Act, 1996.</span></li>
+        <li data-n="(f)"><span><strong>Consumer Forum Carve-out:</strong> Nothing in this arbitration clause shall prevent a User from approaching the appropriate Consumer Disputes Redressal Commission under the Consumer Protection Act, 2019. This clause applies only to commercial or contractual disputes between the parties.</span></li>
+      </ul>
+
+      <div class="sub-head" style="margin-top:24px;">Step 3 — Court (Award Challenge Only)</div>
+      <p>Court intervention is available solely for the purpose of challenging or enforcing an arbitration award, in accordance with applicable law. The competent court for such proceedings shall be the <strong>Sub-Divisional Court, Rohru, Himachal Pradesh</strong>.</p>
+
+      <p>The Application is intended for use within India only. Aelvra makes no representation that the Services are appropriate or available outside India.</p>
+    </section>
+
+    <!-- 19 -->
+    <section class="section" id="s19">
+      <div class="section-header"><span class="section-num">19</span><h2>Contact &amp; Grievance Redressal</h2></div>
+      <p>All restaurant contact details — including phone number, operating hours, location, and Help &amp; Support — are available within the Application under <strong>Account → Help &amp; Support</strong>. For platform-related matters, contact Aelvra directly:</p>
+
+      <div class="contact-block">
+        <div class="co-label">Technology Partner · Aelvra</div>
+        <div class="contact-row"><span class="cr-key">Entity</span><span class="cr-val">Aelvra</span></div>
+        <div class="contact-row"><span class="cr-key">Email</span><span class="cr-val"><a href="/cdn-cgi/l/email-protection#a7ccc6d5d3cecce7c6c2cbd1d5c689cec9"><span class="__cf_email__" data-cfemail="81eae0f3f5e8eac1e0e4edf7f3e0afe8ef">[email&#160;protected]</span></a></span></div>
+        <div class="contact-row"><span class="cr-key">Website</span><span class="cr-val"><a href="https://aelvra.in" target="_blank">aelvra.in</a></span></div>
+        <div class="contact-row"><span class="cr-key">Response Time</span><span class="cr-val">Within 7 business days</span></div>
+        <div class="contact-row"><span class="cr-key">Scope</span><span class="cr-val">Platform issues, payment errors, account matters, technical support, data requests</span></div>
+      </div>
+
+      <p style="margin-top:28px;">For orders, food quality, delivery, refund approvals, wrong items, and all Restaurant-specific matters:</p>
+      <div class="contact-block" style="border-top-color:var(--muted2);">
+        <div class="co-label">Restaurant Partner · May Fair Restaurant</div>
+        <div class="contact-row"><span class="cr-key">Restaurant</span><span class="cr-val">May Fair Restaurant</span></div>
+        <div class="contact-row"><span class="cr-key">Location</span><span class="cr-val">Rohru, Himachal Pradesh — 171207</span></div>
+        <div class="contact-row"><span class="cr-key">Contact</span><span class="cr-val">Available in-app via Account → Help &amp; Support (during working hours)</span></div>
+        <div class="contact-row"><span class="cr-key">Scope</span><span class="cr-val">Orders, delivery, food quality, wrong items, refunds, COD, dine-in arrangements</span></div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <span class="footer-logo">AELVRA</span>
+  <span>Terms &amp; Conditions · v1.0 · 20 March 2026 · May Fair Restaurant × Aelvra</span>
+  <span>© 2026
