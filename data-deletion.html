@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Data Deletion Request — Aelvra</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bg:#0a0a0b;--surface:#111113;--border:#222226;--border2:#2e2e34;
+  --gold:#c9a84c;--gold-dim:#7a6430;--text:#e8e8ec;--muted:#6c6c78;
+  --muted2:#4a4a54;--white:#ffffff;
+  --red:#e05252;--red-dim:rgba(224,82,82,0.08);--red-border:rgba(224,82,82,0.2);
+  --green:#4caf7d;--green-dim:rgba(76,175,125,0.08);--green-border:rgba(76,175,125,0.25);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-weight:300;-webkit-font-smoothing:antialiased;}
+::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-track{background:var(--bg);}::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px;}
+
+/* ── TOPBAR ── */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;background:rgba(10,10,11,0.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 40px;justify-content:space-between;}
+.topbar-logo{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;letter-spacing:0.12em;color:var(--white);text-decoration:none;}
+.topbar-right{display:flex;align-items:center;gap:16px;}
+.topbar-back{font-size:12px;font-weight:400;color:var(--muted);text-decoration:none;letter-spacing:0.06em;transition:color .18s;}
+.topbar-back:hover{color:var(--text);}
+.topbar-label{font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--red);background:var(--red-dim);border:1px solid var(--red-border);padding:4px 14px;border-radius:2px;}
+
+/* ── LAYOUT ── */
+.layout{display:flex;min-height:100vh;padding-top:56px;}
+
+/* ── SIDEBAR ── */
+.sidebar{width:268px;flex-shrink:0;position:sticky;top:56px;height:calc(100vh - 56px);overflow-y:auto;border-right:1px solid var(--border);padding:40px 0;}
+.sidebar-head{font-size:10px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--muted);padding:0 32px 18px;border-bottom:1px solid var(--border);margin-bottom:12px;}
+.nav-item{display:flex;align-items:center;gap:12px;padding:8px 32px;text-decoration:none;font-size:12.5px;font-weight:400;color:var(--muted);transition:color .18s,background .18s;border-left:2px solid transparent;line-height:1.4;}
+.nav-item:hover{color:var(--text);background:rgba(255,255,255,0.03);border-left-color:var(--border2);}
+.nav-item.active{color:var(--gold);border-left-color:var(--gold);background:rgba(201,168,76,0.05);}
+.nav-num{font-size:10px;font-weight:500;color:var(--muted2);min-width:20px;}
+.sidebar-section{padding:20px 32px 10px;font-size:10px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted2);margin-top:8px;}
+
+/* ── CONTENT ── */
+.content{flex:1;max-width:680px;padding:64px 72px 120px;animation:fadeUp .5s ease both;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+
+/* ── HERO ── */
+.hero{margin-bottom:56px;padding-bottom:48px;border-bottom:1px solid var(--border);}
+.hero-kicker{font-size:11px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--red);margin-bottom:18px;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,56px);font-weight:600;line-height:1.08;color:var(--white);margin-bottom:16px;letter-spacing:-0.01em;}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;color:var(--muted);margin-bottom:26px;}
+.hero-notice{background:var(--red-dim);border:1px solid var(--red-border);border-left:3px solid var(--red);padding:16px 20px;font-size:13.5px;line-height:1.75;color:#c0a0a0;border-radius:0 2px 2px 0;}
+.hero-notice strong{color:var(--text);}
+
+/* ── STEP INDICATOR ── */
+.steps{display:flex;align-items:center;margin-bottom:40px;animation:fadeUp .45s .06s ease both;}
+.step-item{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:400;color:var(--muted2);letter-spacing:0.04em;}
+.step-item.active{color:var(--text);}
+.step-item.done{color:var(--green);}
+.step-dot{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:var(--muted2);background:var(--surface);flex-shrink:0;transition:all .3s;}
+.step-item.active .step-dot{border-color:var(--gold);color:var(--gold);background:rgba(201,168,76,0.08);}
+.step-item.done .step-dot{border-color:var(--green);color:var(--bg);background:var(--green);}
+.step-line{flex:1;height:1px;background:var(--border2);margin:0 12px;max-width:40px;}
+
+/* ── SECTION ── */
+.section{margin-bottom:40px;animation:fadeUp .45s ease both;}
+
+.section-header{display:flex;align-items:baseline;gap:16px;margin-bottom:22px;}
+.section-num{font-family:'Cormorant Garamond',serif;font-size:13px;color:var(--gold-dim);letter-spacing:0.1em;min-width:28px;}
+.section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(18px,2.4vw,22px);font-weight:600;color:var(--white);line-height:1.2;}
+
+p{font-size:14.5px;line-height:1.85;color:#b0b0bc;margin-bottom:14px;}
+p strong{color:var(--text);font-weight:500;}
+p:last-child{margin-bottom:0;}
+
+/* ── FORM ELEMENTS ── */
+.field{margin-bottom:22px;}
+.field:last-child{margin-bottom:0;}
+
+.field-label{display:block;font-size:10.5px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#8a8a96;margin-bottom:9px;}
+.field-label .req{color:var(--red);margin-left:2px;}
+
+input[type="text"],input[type="email"],textarea{
+  width:100%;background:var(--surface);border:1px solid var(--border2);
+  border-radius:3px;padding:13px 16px;
+  font-family:'Outfit',sans-serif;font-size:14.5px;font-weight:300;
+  color:var(--text);outline:none;
+  transition:border-color .18s,box-shadow .18s;
+}
+input:focus,textarea:focus{
+  border-color:var(--gold-dim);
+  box-shadow:0 0 0 3px rgba(201,168,76,0.08);
+  background:#141416;
+}
+input::placeholder,textarea::placeholder{color:var(--muted2);}
+textarea{resize:vertical;min-height:88px;line-height:1.65;}
+
+.field-hint{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.5;}
+
+/* ── CHECKBOXES ── */
+.check-group{display:flex;flex-direction:column;gap:0;border:1px solid var(--border);border-radius:3px;overflow:hidden;}
+.check-item{display:flex;align-items:flex-start;gap:12px;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .15s;}
+.check-item:last-child{border-bottom:none;}
+.check-item:hover{background:rgba(255,255,255,0.02);}
+.check-item input[type="checkbox"]{width:16px;height:16px;flex-shrink:0;margin-top:2px;cursor:pointer;accent-color:var(--gold);border-radius:2px;}
+.check-label{font-size:13.5px;color:#b0b0bc;line-height:1.5;cursor:pointer;}
+.check-label small{color:var(--muted);font-size:12px;display:block;margin-top:1px;}
+
+/* ── DIVIDER ── */
+.divider{height:1px;background:var(--border);margin:28px 0;}
+
+/* ── CALLOUT ── */
+.callout{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--border2);border-radius:3px;padding:16px 18px;margin-bottom:24px;font-size:13.5px;line-height:1.75;color:#a0a0b0;}
+.callout.red{background:var(--red-dim);border-color:var(--red-border);}
+.callout.gold{background:rgba(201,168,76,0.05);border-color:rgba(201,168,76,0.18);}
+.callout.green{background:var(--green-dim);border-color:var(--green-border);}
+.callout-icon{font-size:15px;flex-shrink:0;margin-top:1px;}
+.callout strong{color:var(--text);}
+
+/* ── ERROR ── */
+.field-error{font-size:12px;color:var(--red);margin-top:5px;display:none;}
+.field.has-error input,.field.has-error textarea{border-color:var(--red);}
+.field.has-error .field-error{display:block;}
+
+/* ── REVIEW TABLE ── */
+.review-table{border:1px solid var(--border);border-radius:3px;overflow:hidden;margin-bottom:24px;}
+.review-row{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:12px 18px;border-bottom:1px solid var(--border);font-size:13.5px;}
+.review-row:last-child{border-bottom:none;}
+.review-key{font-size:10.5px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);flex-shrink:0;padding-top:1px;}
+.review-val{color:var(--text);text-align:right;word-break:break-all;}
+
+/* ── BUTTONS ── */
+.btn-primary{width:100%;background:var(--red);color:#fff;border:none;border-radius:3px;padding:14px 24px;font-family:'Outfit',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:background .18s,transform .1s;display:flex;align-items:center;justify-content:center;gap:8px;}
+.btn-primary:hover{background:#c94444;}
+.btn-primary:active{transform:scale(0.99);}
+.btn-secondary{flex:1;background:transparent;color:var(--muted);border:1px solid var(--border2);border-radius:3px;padding:13px 20px;font-family:'Outfit',sans-serif;font-size:13px;font-weight:400;letter-spacing:0.06em;cursor:pointer;transition:border-color .18s,color .18s;}
+.btn-secondary:hover{border-color:var(--muted);color:var(--text);}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap;}
+
+/* ── TIMELINE (sidebar info) ── */
+.timeline-box{border:1px solid var(--border);border-radius:3px;overflow:hidden;margin-top:32px;}
+.timeline-box-head{padding:14px 20px;border-bottom:1px solid var(--border);font-size:10.5px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);}
+.tl-item{display:flex;gap:14px;padding:14px 20px;border-bottom:1px solid var(--border);font-size:13px;}
+.tl-item:last-child{border-bottom:none;}
+.tl-num{width:22px;height:22px;border-radius:50%;border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:var(--gold);background:rgba(201,168,76,0.06);flex-shrink:0;margin-top:1px;}
+.tl-content dt{color:var(--text);font-weight:400;margin-bottom:3px;}
+.tl-content dd{color:var(--muted);line-height:1.6;font-size:12.5px;}
+
+/* ── SUCCESS ── */
+.success-screen{display:none;animation:fadeUp .5s ease both;}
+.success-icon-wrap{width:64px;height:64px;border-radius:50%;background:var(--green-dim);border:1.5px solid var(--green-border);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:28px;}
+.success-screen h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,40px);font-weight:600;color:var(--white);margin-bottom:14px;}
+
+/* ── FOOTER ── */
+footer{border-top:1px solid var(--border);padding:28px 72px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--muted2);letter-spacing:0.04em;margin-left:268px;}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;color:var(--muted);letter-spacing:0.1em;}
+footer a{color:var(--muted);text-decoration:none;}
+footer a:hover{color:var(--text);}
+
+@media(max-width:880px){
+  .sidebar{display:none;}
+  .content{padding:44px 24px 80px;max-width:100%;}
+  footer{margin-left:0;padding:24px;}
+  .topbar{padding:0 20px;}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <a href="https://aelvra.in" class="topbar-logo">AELVRA</a>
+  <div class="topbar-right">
+    <a href="privacy-policy.html" class="topbar-back">← Privacy Policy</a>
+    <span class="topbar-label">Data Deletion</span>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar">
+    <div class="sidebar-head">On This Page</div>
+    <a class="nav-item active" href="#form-section"><span class="nav-num">—</span>Deletion Request Form</a>
+    <a class="nav-item" href="#what-happens"><span class="nav-num">—</span>What Happens Next</a>
+    <div class="sidebar-section">Quick Links</div>
+    <a class="nav-item" href="privacy-policy.html"><span class="nav-num">↗</span>Privacy Policy</a>
+    <a class="nav-item" href="mailto:support@aelvra.com"><span class="nav-num">✉</span>support@aelvra.com</a>
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-kicker">Data Rights · Legal</div>
+      <h1>Request Data<br/>Deletion</h1>
+      <div class="hero-sub">May Fair Restaurant × Aelvra</div>
+      <div class="hero-notice">
+        <strong>This action is permanent and irreversible.</strong> Once your data is deleted from Aelvra's cloud servers, it cannot be recovered. Please ensure you have saved any invoices or order receipts you may require.
+      </div>
+    </div>
+
+    <!-- STEP INDICATOR -->
+    <div class="steps" id="stepsBar">
+      <div class="step-item active" id="si1">
+        <div class="step-dot" id="sd1">1</div>
+        <span>Your Details</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step-item" id="si2">
+        <div class="step-dot" id="sd2">2</div>
+        <span>Review</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step-item" id="si3">
+        <div class="step-dot" id="sd3">3</div>
+        <span>Submitted</span>
+      </div>
+    </div>
+
+    <!-- ══ STEP 1 ══ -->
+    <div id="step1" id="form-section">
+
+      <div class="section" style="animation-delay:.08s;">
+        <div class="section-header"><span class="section-num">01</span><h2>Your Registered Details</h2></div>
+
+        <div class="callout red">
+          <span class="callout-icon">⚠</span>
+          <div>Enter the details exactly as registered on the application. This is required to verify your identity before processing the deletion.</div>
+        </div>
+
+        <div class="field" id="f-name">
+          <label class="field-label">Full Name <span class="req">*</span></label>
+          <input type="text" id="inp-name" placeholder="As registered on the app" autocomplete="name"/>
+          <div class="field-error">Please enter your full name.</div>
+        </div>
+
+        <div class="field" id="f-email">
+          <label class="field-label">Registered Email Address <span class="req">*</span></label>
+          <input type="email" id="inp-email" placeholder="email@example.com" autocomplete="email"/>
+          <div class="field-error">Please enter a valid email address.</div>
+        </div>
+
+        <div class="field" id="f-phone">
+          <label class="field-label">Registered Mobile Number <span class="req">*</span></label>
+          <input type="text" id="inp-phone" placeholder="+91 00000 00000" autocomplete="tel"/>
+          <div class="field-error">Please enter your registered mobile number.</div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="section" style="animation-delay:.12s;">
+        <div class="section-header"><span class="section-num">02</span><h2>Reason for Deletion</h2></div>
+        <p>Optional — helps us improve the platform.</p>
+        <div class="field">
+          <div class="check-group">
+            <label class="check-item">
+              <input type="checkbox" name="reason" value="No longer using the app"/>
+              <span class="check-label">No longer using the application</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="reason" value="Privacy concerns"/>
+              <span class="check-label">Privacy concerns</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="reason" value="Switching to another service"/>
+              <span class="check-label">Switching to another service</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="reason" value="Other"/>
+              <span class="check-label">Other</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="field" style="margin-top:18px;">
+          <label class="field-label">Additional Notes <span style="color:var(--muted);font-size:9px;text-transform:none;letter-spacing:0;font-weight:400;">(optional)</span></label>
+          <textarea id="inp-note" placeholder="Any specific concerns or data you'd like to mention..."></textarea>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="section" style="animation-delay:.16s;">
+        <div class="section-header"><span class="section-num">03</span><h2>Acknowledgement</h2></div>
+
+        <div class="field" id="f-confirm">
+          <div class="check-group">
+            <label class="check-item">
+              <input type="checkbox" id="chk-confirm"/>
+              <span class="check-label">
+                I understand that this request will permanently delete my account and all associated personal data from Aelvra's cloud servers. This action cannot be undone.
+                <small>May Fair Restaurant may independently retain order records for legal and accounting compliance. These are held locally and are not within the scope of this deletion request.</small>
+              </span>
+            </label>
+          </div>
+          <div class="field-error">You must acknowledge to proceed.</div>
+        </div>
+
+        <div style="margin-top:28px;">
+          <button class="btn-primary" onclick="goToReview()">Continue to Review →</button>
+        </div>
+      </div>
+
+    </div>
+    <!-- /step1 -->
+
+    <!-- ══ STEP 2 — REVIEW ══ -->
+    <div id="step2" style="display:none;">
+
+      <div class="section">
+        <div class="section-header"><span class="section-num">—</span><h2>Review Your Request</h2></div>
+
+        <div class="callout gold">
+          <span class="callout-icon">§</span>
+          <div>Please confirm the details below. Upon submission, a formal deletion request email will be sent to <strong><a href="mailto:support@aelvra.com">support@aelvra.com</a></strong> on your behalf.</div>
+        </div>
+
+        <div class="review-table">
+          <div class="review-row"><span class="review-key">Name</span><span class="review-val" id="rev-name"></span></div>
+          <div class="review-row"><span class="review-key">Email</span><span class="review-val" id="rev-email"></span></div>
+          <div class="review-row"><span class="review-key">Mobile</span><span class="review-val" id="rev-phone"></span></div>
+          <div class="review-row"><span class="review-key">Reason</span><span class="review-val" id="rev-reason" style="color:var(--muted);"></span></div>
+        </div>
+
+        <div class="callout red" style="margin-bottom:28px;">
+          <span class="callout-icon">🗑</span>
+          <div>Submitting this request will <strong>permanently and irreversibly delete</strong> your data from Aelvra's cloud infrastructure. <strong>Confirmation:</strong> within <strong>7 working days</strong> | <strong>Permanent purge:</strong> within <strong>30 days</strong> (legal retention obligations may apply).</div>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn-secondary" onclick="goBack()">← Go Back</button>
+          <button class="btn-primary" style="flex:2;" onclick="submitRequest()">Submit Deletion Request</button>
+        </div>
+      </div>
+
+    </div>
+    <!-- /step2 -->
+
+    <!-- ══ SUCCESS ══ -->
+    <div id="successScreen" class="success-screen">
+      <div class="success-icon-wrap">✓</div>
+      <h2>Request Submitted</h2>
+      <p>Your data deletion request has been sent to <strong><a href="mailto:support@aelvra.com">support@aelvra.com</a></strong>. <strong>Confirmation:</strong> within <strong>7 working days</strong> | <strong>Permanent purge:</strong> within <strong>30 days</strong> (legal retention obligations may apply).</p>
+      <p style="margin-top:8px;">A deletion confirmation will be sent to your registered email address once complete.</p>
+
+      <div class="timeline-box" style="margin-top:36px;text-align:left;">
+        <div class="timeline-box-head">What Happens Next</div>
+        <div class="tl-item"><div class="tl-num">1</div><dl class="tl-content"><dt>Request Received</dt><dd>Privacy team at <a href="mailto:support@aelvra.com">support@aelvra.com</a> receives your request immediately.</dd></dl></div>
+        <div class="tl-item"><div class="tl-num">2</div><dl class="tl-content"><dt>Identity Verified</dt><dd>Request is matched against your registered account to prevent unauthorised deletion.</dd></dl></div>
+        <div class="tl-item"><div class="tl-num">3</div><dl class="tl-content"><dt>Data Permanently Deleted</dt><dd>All personal data — account, profile, addresses, notification tokens — purged from Aelvra's cloud servers. Irreversible.</dd></dl></div>
+        <div class="tl-item"><div class="tl-num">4</div><dl class="tl-content"><dt>Confirmation Sent</dt><dd>Deletion confirmation emailed to your registered address within <strong>7 working days</strong>. Permanent purge completed within <strong>30 days</strong> (legal retention obligations may apply to certain records).</dd></dl></div>
+        <div class="tl-item"><div class="tl-num">5</div><dl class="tl-content"><dt>May Fair Restaurant Records</dt><dd>May Fair Restaurant may independently retain order records (physical or local) for legal and accounting compliance. These are outside the scope of this deletion and are not on Aelvra's servers.</dd></dl></div>
+      </div>
+    </div>
+    <!-- /success -->
+
+    <!-- WHAT HAPPENS NEXT (visible before submit) -->
+    <div id="what-happens">
+      <div class="divider" style="margin-top:56px;"></div>
+      <div class="section" style="margin-top:40px;">
+        <div class="section-header"><span class="section-num">—</span><h2>What Happens After You Submit</h2></div>
+        <div class="timeline-box">
+          <div class="timeline-box-head">Process Timeline</div>
+          <div class="tl-item"><div class="tl-num">1</div><dl class="tl-content"><dt>Request Received</dt><dd>Your request is received by the Aelvra privacy team at <a href="mailto:support@aelvra.com">support@aelvra.com</a> immediately upon submission.</dd></dl></div>
+          <div class="tl-item"><div class="tl-num">2</div><dl class="tl-content"><dt>Identity Verified</dt><dd>The request is matched against your registered account details to prevent unauthorised deletions.</dd></dl></div>
+          <div class="tl-item"><div class="tl-num">3</div><dl class="tl-content"><dt>Data Permanently Deleted</dt><dd>All personal data — account, profile, delivery addresses, notification tokens — is permanently purged from Aelvra's cloud servers. This is irreversible.</dd></dl></div>
+          <div class="tl-item"><div class="tl-num">4</div><dl class="tl-content"><dt>Confirmation &amp; Purge Timeline</dt><dd><strong>Confirmation:</strong> within <strong>7 working days</strong> | <strong>Permanent purge:</strong> within <strong>30 days</strong> (mandatory legal retention obligations may apply).</dd></dl></div>
+          <div class="tl-item"><div class="tl-num">5</div><dl class="tl-content"><dt>May Fair Restaurant Records</dt><dd>May Fair Restaurant may independently retain certain order records (physical or local) for legal and accounting compliance. These records are not held on Aelvra's servers and are outside the scope of this deletion request.</dd></dl></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<footer>
+  <span class="footer-logo">AELVRA</span>
+  <span><a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="mailto:support@aelvra.com">support@aelvra.com</a></span>
+  <span>© 2026 Aelvra. All rights reserved.</span>
+</footer>
+
+<script>
+function goToReview() {
+  let valid = true;
+  const name = document.getElementById('inp-name').value.trim();
+  const fName = document.getElementById('f-name');
+  if (!name) { fName.classList.add('has-error'); valid = false; } else fName.classList.remove('has-error');
+
+  const email = document.getElementById('inp-email').value.trim();
+  const fEmail = document.getElementById('f-email');
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { fEmail.classList.add('has-error'); valid = false; } else fEmail.classList.remove('has-error');
+
+  const phone = document.getElementById('inp-phone').value.trim();
+  const fPhone = document.getElementById('f-phone');
+  if (!phone) { fPhone.classList.add('has-error'); valid = false; } else fPhone.classList.remove('has-error');
+
+  const confirmed = document.getElementById('chk-confirm').checked;
+  const fConfirm = document.getElementById('f-confirm');
+  if (!confirmed) { fConfirm.classList.add('has-error'); valid = false; } else fConfirm.classList.remove('has-error');
+
+  if (!valid) return;
+
+  const reasons = Array.from(document.querySelectorAll('input[name="reason"]:checked')).map(c => c.value).join(', ');
+  document.getElementById('rev-name').textContent = name;
+  document.getElementById('rev-email').textContent = email;
+  document.getElementById('rev-phone').textContent = phone;
+  document.getElementById('rev-reason').textContent = reasons || 'Not specified';
+
+  document.getElementById('step1').style.display = 'none';
+  document.getElementById('what-happens').style.display = 'none';
+  document.getElementById('step2').style.display = 'block';
+
+  setStep(1, 'done'); setStep(2, 'active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function goBack() {
+  document.getElementById('step2').style.display = 'none';
+  document.getElementById('step1').style.display = 'block';
+  document.getElementById('what-happens').style.display = 'block';
+  setStep(2, 'idle'); setStep(1, 'active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function submitRequest() {
+  const name  = document.getElementById('inp-name').value.trim();
+  const email = document.getElementById('inp-email').value.trim();
+  const phone = document.getElementById('inp-phone').value.trim();
+  const note  = document.getElementById('inp-note').value.trim();
+  const reasons = Array.from(document.querySelectorAll('input[name="reason"]:checked')).map(c => c.value).join(', ');
+
+  const body = [
+    'Data Deletion Request — Aelvra × May Fair Restaurant',
+    '──────────────────────────────────────────────────',
+    'Full Name    : ' + name,
+    'Email        : ' + email,
+    'Mobile       : ' + phone,
+    'Reason(s)    : ' + (reasons || 'Not specified'),
+    'Notes        : ' + (note || 'None'),
+    '──────────────────────────────────────────────────',
+    'I formally request permanent deletion of all my personal data from',
+    "Aelvra's cloud servers in accordance with the Privacy Policy.",
+    '',
+    'Submitted via aelvra.in/data-deletion',
+  ].join('\n');
+
+  window.location.href = 'mailto:support@aelvra.com' +
+    '?subject=' + encodeURIComponent('Data Deletion Request — ' + name) +
+    '&body=' + encodeURIComponent(body);
+
+  document.getElementById('step2').style.display = 'none';
+  document.getElementById('successScreen').style.display = 'block';
+  document.getElementById('stepsBar').style.display = 'none';
+  setStep(3, 'done');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function setStep(n, state) {
+  const si = document.getElementById('si' + n);
+  const sd = document.getElementById('sd' + n);
+  si.className = 'step-item' + (state === 'active' ? ' active' : state === 'done' ? ' done' : '');
+  if (state === 'done') sd.textContent = '✓';
+}
+
+// Sidebar active link on scroll
+window.addEventListener('scroll', () => {
+  const sections = ['form-section', 'what-happens'];
+  let current = sections[0];
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && window.scrollY >= el.offsetTop - 120) current = id;
+  });
+  document.querySelectorAll('.nav-item').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+});
+</script>
+
+</body>
+</html>
