@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aelvra — Restaurant Technology Partner</title>
+<meta name="description" content="Aelvra builds technology platforms for restaurants. Ordering, payments, delivery — all in one app."/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#0a0a0b;--surface:#111113;--border:#222226;--border2:#2e2e34;
+  --gold:#c9a84c;--gold-dim:#7a6430;--text:#e8e8ec;--muted:#6c6c78;
+  --muted2:#4a4a54;--white:#ffffff;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-track{background:var(--bg);}::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px;}
+a{color:var(--gold);text-decoration:none;}
+a:hover{text-decoration:underline;}
+p{font-size:14.5px;line-height:1.88;color:#b0b0bc;margin-bottom:16px;}
+p:last-child{margin-bottom:0;}
+p strong{color:var(--text);font-weight:500;}
+
+/* TOPBAR */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;background:rgba(10,10,11,0.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 40px;justify-content:space-between;}
+.topbar-logo{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;letter-spacing:0.12em;color:var(--white);text-decoration:none;}
+.topbar-right{display:flex;align-items:center;gap:20px;}
+.topbar-link{font-size:12px;font-weight:400;color:var(--muted);text-decoration:none;letter-spacing:0.06em;transition:color .18s;}
+.topbar-link:hover{color:var(--text);}
+.topbar-label{font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);padding:4px 14px;border-radius:2px;}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:120px 80px 80px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 60% 50% at 70% 40%,rgba(201,168,76,0.06) 0%,transparent 70%);pointer-events:none;}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:80px 80px;opacity:0.25;pointer-events:none;}
+.hero-content{position:relative;z-index:1;max-width:680px;animation:fadeUp .6s ease both;}
+.hero-kicker{font-size:11px;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:24px;display:flex;align-items:center;gap:12px;}
+.hero-kicker::before{content:'';display:inline-block;width:32px;height:1px;background:var(--gold);}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,7vw,88px);font-weight:600;line-height:1.0;color:var(--white);margin-bottom:12px;letter-spacing:-0.02em;}
+.hero h1 em{font-style:italic;color:var(--gold);}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;font-style:italic;color:var(--muted);margin-bottom:36px;line-height:1.5;}
+.hero-desc{font-size:15px;line-height:1.85;color:#8a8a96;max-width:480px;margin-bottom:48px;}
+.hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.3);border-radius:3px;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);text-decoration:none;transition:background .2s,border-color .2s;}
+.btn-primary:hover{background:rgba(201,168,76,0.18);border-color:rgba(201,168,76,0.5);text-decoration:none;}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:400;letter-spacing:0.1em;color:var(--muted);text-decoration:none;transition:color .18s;}
+.btn-ghost:hover{color:var(--text);text-decoration:none;}
+.hero-scroll{position:absolute;bottom:40px;left:80px;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted2);display:flex;align-items:center;gap:10px;}
+.hero-scroll::before{content:'';display:inline-block;width:40px;height:1px;background:var(--muted2);}
+
+/* DIVIDER */
+.section-divider{height:1px;background:var(--border);margin:0 80px;}
+
+/* SECTIONS */
+.section{padding:96px 80px;}
+.section-kicker{font-size:10px;font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:16px;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,46px);font-weight:600;color:var(--white);margin-bottom:14px;line-height:1.1;letter-spacing:-0.01em;}
+.section-title em{font-style:italic;color:var(--gold);}
+.section-lead{font-size:15px;line-height:1.85;color:#8a8a96;max-width:520px;margin-bottom:52px;}
+
+/* FEATURES */
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;}
+.feature{background:var(--bg);padding:32px 28px;transition:background .2s;}
+.feature:hover{background:var(--surface);}
+.feature-icon{font-size:20px;margin-bottom:18px;}
+.feature-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--white);margin-bottom:10px;}
+.feature-desc{font-size:13px;line-height:1.75;color:var(--muted);}
+
+/* CLIENTS */
+.clients-section{padding:96px 80px;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.client-card{border:1px solid var(--border2);border-top:2px solid var(--gold);border-radius:0 0 4px 4px;background:var(--bg);padding:36px 40px;max-width:540px;}
+.client-label{font-size:10px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;}
+.client-name{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--white);margin-bottom:6px;}
+.client-loc{font-size:13px;color:var(--muted);margin-bottom:28px;letter-spacing:0.04em;}
+.client-links{display:flex;flex-direction:column;gap:0;border:1px solid var(--border);border-radius:4px;overflow:hidden;}
+.client-link{display:flex;align-items:center;justify-content:space-between;padding:13px 18px;font-size:12.5px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);transition:background .18s,color .18s;}
+.client-link:last-child{border-bottom:none;}
+.client-link:hover{background:rgba(201,168,76,0.04);color:var(--text);text-decoration:none;}
+.client-link span{font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-dim);}
+.client-link-arrow{font-size:12px;color:var(--muted2);}
+
+/* CONTACT */
+.contact-section{padding:96px 80px;}
+.contact-block{background:var(--surface);border:1px solid var(--border2);border-top:2px solid var(--gold);border-radius:0 0 4px 4px;padding:28px 32px;max-width:420px;}
+.contact-block-label{font-size:10px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.contact-row{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;}
+.contact-row:last-child{border-bottom:none;}
+.cr-key{color:var(--muted);min-width:80px;font-size:11px;padding-top:1px;}
+.cr-val{color:var(--text);}
+.cr-val a{color:var(--gold);}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:28px 80px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:11.5px;color:var(--muted2);letter-spacing:0.04em;}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;color:var(--muted);letter-spacing:0.1em;}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap;}
+footer a{color:var(--muted);text-decoration:none;}
+footer a:hover{color:var(--text);}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{padding:100px 24px 60px;}
+  .section{padding:64px 24px;}
+  .section-divider{margin:0 24px;}
+  .clients-section{padding:64px 24px;}
+  .contact-section{padding:64px 24px;}
+  .features{grid-template-columns:1fr;}
+  footer{padding:24px;}
+  .topbar{padding:0 20px;}
+  .topbar-label{display:none;}
+  .hero-scroll{display:none;}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <a href="/" class="topbar-logo">AELVRA</a>
+  <div class="topbar-right">
+    <a href="mailto:support@aelvra.in" class="topbar-link">support@aelvra.in</a>
+    <span class="topbar-label">Technology Partner</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-kicker">Restaurant Technology</div>
+    <h1>Built for<br/><em>restaurants.</em></h1>
+    <div class="hero-sub">Ordering · Payments · Delivery — one platform.</div>
+    <p class="hero-desc">Aelvra builds end-to-end digital ordering systems for restaurants — custom mobile apps with real-time order tracking, online payments, delivery management, and push notifications.</p>
+    <div class="hero-actions">
+      <a href="mailto:support@aelvra.in" class="btn-primary">Get in Touch ↗</a>
+      <a href="#clients" class="btn-ghost">View Clients →</a>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll to explore</div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- WHAT WE BUILD -->
+<section class="section">
+  <div class="section-kicker">What We Build</div>
+  <h2 class="section-title">Everything a restaurant<br/><em>needs, digitally.</em></h2>
+  <p class="section-lead">From the customer's first tap to the final delivery — Aelvra handles the full stack so restaurants can focus on what they do best.</p>
+
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon">📱</div>
+      <div class="feature-title">Custom Mobile App</div>
+      <div class="feature-desc">Branded ordering app for your restaurant. Delivery, takeaway, and dine-in — all in one place for your customers.</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">⚡</div>
+      <div class="feature-title">Real-Time Orders</div>
+      <div class="feature-desc">Live order status updates, push notifications, and OTP-based delivery verification — every step tracked in real time.</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">💳</div>
+      <div class="feature-title">Payments</div>
+      <div class="feature-desc">Online payments via Razorpay and Cash on Delivery. Auto-generated invoices and receipts on every order.</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🗺️</div>
+      <div class="feature-title">Delivery Management</div>
+      <div class="feature-desc">Zone-based delivery with landmark selection, delivery personnel assignment, and live contact sharing in-app.</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">📋</div>
+      <div class="feature-title">Menu & Availability</div>
+      <div class="feature-desc">Real-time open/close status, menu management, veg/non-veg segregation, and custom item instructions.</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🔒</div>
+      <div class="feature-title">Legal & Compliant</div>
+      <div class="feature-desc">DPDP Act 2023 compliant. Data on ISO 27001 certified servers in Mumbai, India. Full legal documentation included.</div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CLIENTS -->
+<section class="clients-section" id="clients">
+  <div class="section-kicker">Our Clients</div>
+  <h2 class="section-title">Powering <em>restaurants</em><br/>across India.</h2>
+  <p class="section-lead">Every restaurant we partner with gets a fully custom platform — built, hosted, and maintained by Aelvra.</p>
+
+  <div class="client-card">
+    <div class="client-label">Active Partner · Since 2026</div>
+    <div class="client-name">May Fair Restaurant</div>
+    <div class="client-loc">Rohru, Himachal Pradesh — 171207</div>
+    <div class="client-links">
+      <a href="May-Fair/privacy-policy.html" class="client-link">
+        <span>Privacy Policy</span>
+        <span class="client-link-arrow">↗</span>
+      </a>
+      <a href="May-Fair/terms-and-conditions.html" class="client-link">
+        <span>Terms &amp; Conditions</span>
+        <span class="client-link-arrow">↗</span>
+      </a>
+      <a href="May-Fair/data-deletion.html" class="client-link">
+        <span>Data Deletion</span>
+        <span class="client-link-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="section-kicker">Get In Touch</div>
+  <h2 class="section-title">Want a platform for<br/><em>your restaurant?</em></h2>
+  <p class="section-lead">Reach out and we'll get back to you within 7 business days.</p>
+
+  <div class="contact-block">
+    <div class="contact-block-label">Aelvra — Technology Partner</div>
+    <div class="contact-row">
+      <span class="cr-key">Email</span>
+      <span class="cr-val"><a href="mailto:support@aelvra.in">support@aelvra.in</a></span>
+    </div>
+    <div class="contact-row">
+      <span class="cr-key">Website</span>
+      <span class="cr-val"><a href="https://aelvra.in">aelvra.in</a></span>
+    </div>
+    <div class="contact-row">
+      <span class="cr-key">Response</span>
+      <span class="cr-val">Within 7 business days</span>
+    </div>
+    <div class="contact-row">
+      <span class="cr-key">Scope</span>
+      <span class="cr-val">Partnerships, platform enquiries, technical support</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">AELVRA</span>
+  <div class="footer-links">
+    <a href="May-Fair/privacy-policy.html">Privacy Policy</a>
+    <a href="May-Fair/terms-and-conditions.html">Terms &amp; Conditions</a>
+    <a href="May-Fair/data-deletion.html">Data Deletion</a>
+    <a href="mailto:support@aelvra.in">support@aelvra.in</a>
+  </div>
+  <span>© 2026 Aelvra. All rights reserved.</span>
+</footer>
+
+</body>
+</html>
