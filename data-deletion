@@ -325,7 +325,7 @@ footer a:hover{color:var(--text);}
 
         <div class="callout red" style="margin-bottom:28px;">
           <span class="callout-icon">🗑</span>
-          <div>Submitting this request will <strong>permanently and irreversibly delete</strong> your data from Aelvra's cloud infrastructure. <strong>Confirmation:</strong> within <strong>7 working days</strong> | <strong>Permanent purge:</strong> within <strong>30 days</strong> (mandatory legal retention obligations may apply).</div>
+          <div>Submitting this request will <strong>permanently and irreversibly delete</strong> your data from Aelvra's cloud infrastructure. <strong>Confirmation:</strong> within <strong>7 working days</strong> | <strong>Permanent purge:</strong> within <strong>30 days</strong> (legal retention obligations may apply).</div>
         </div>
 
         <div class="btn-row">
@@ -341,9 +341,141 @@ footer a:hover{color:var(--text);}
     <div id="successScreen" class="success-screen">
       <div class="success-icon-wrap">✓</div>
       <h2>Request Submitted</h2>
-      <p>Your data deletion request has been received by the Aelvra privacy team. <strong>Confirmation:</strong> within <strong>7 working days</strong> | <strong>Permanent purge:</strong> within <strong>30 days</strong> (mandatory legal retention obligations may apply).</p>
+      <p>Your data deletion request has been sent to <strong><a href="mailto:support@aelvra.com">support@aelvra.com</a></strong>. <strong>Confirmation:</strong> within <strong>7 working days</strong> | <strong>Permanent purge:</strong> within <strong>30 days</strong> (legal retention obligations may apply).</p>
       <p style="margin-top:8px;">A deletion confirmation will be sent to your registered email address once complete.</p>
 
       <div class="timeline-box" style="margin-top:36px;text-align:left;">
         <div class="timeline-box-head">What Happens Next</div>
-        <div class="tl-item"><div class="tl-num">1</div><dl class="tl-content"
+        <div class="tl-item"><div class="tl-num">1</div><dl class="tl-content"><dt>Request Received</dt><dd>Privacy team at <a href="mailto:support@aelvra.com">support@aelvra.com</a> receives your request immediately.</dd></dl></div>
+        <div class="tl-item"><div class="tl-num">2</div><dl class="tl-content"><dt>Identity Verified</dt><dd>Request is matched against your registered account to prevent unauthorised deletion.</dd></dl></div>
+        <div class="tl-item"><div class="tl-num">3</div><dl class="tl-content"><dt>Data Permanently Deleted</dt><dd>All personal data — account, profile, addresses, notification tokens — purged from Aelvra's cloud servers. Irreversible.</dd></dl></div>
+        <div class="tl-item"><div class="tl-num">4</div><dl class="tl-content"><dt>Confirmation Sent</dt><dd>Deletion confirmation emailed to your registered address within <strong>7 working days</strong>. Permanent purge completed within <strong>30 days</strong> (legal retention obligations may apply to certain records).</dd></dl></div>
+        <div class="tl-item"><div class="tl-num">5</div><dl class="tl-content"><dt>May Fair Restaurant Records</dt><dd>May Fair Restaurant may independently retain order records (physical or local) for legal and accounting compliance. These are outside the scope of this deletion and are not on Aelvra's servers.</dd></dl></div>
+      </div>
+    </div>
+    <!-- /success -->
+
+    <!-- WHAT HAPPENS NEXT (visible before submit) -->
+    <div id="what-happens">
+      <div class="divider" style="margin-top:56px;"></div>
+      <div class="section" style="margin-top:40px;">
+        <div class="section-header"><span class="section-num">—</span><h2>What Happens After You Submit</h2></div>
+        <div class="timeline-box">
+          <div class="timeline-box-head">Process Timeline</div>
+          <div class="tl-item"><div class="tl-num">1</div><dl class="tl-content"><dt>Request Received</dt><dd>Your request is received by the Aelvra privacy team at <a href="mailto:support@aelvra.com">support@aelvra.com</a> immediately upon submission.</dd></dl></div>
+          <div class="tl-item"><div class="tl-num">2</div><dl class="tl-content"><dt>Identity Verified</dt><dd>The request is matched against your registered account details to prevent unauthorised deletions.</dd></dl></div>
+          <div class="tl-item"><div class="tl-num">3</div><dl class="tl-content"><dt>Data Permanently Deleted</dt><dd>All personal data — account, profile, delivery addresses, notification tokens — is permanently purged from Aelvra's cloud servers. This is irreversible.</dd></dl></div>
+          <div class="tl-item"><div class="tl-num">4</div><dl class="tl-content"><dt>Confirmation &amp; Purge Timeline</dt><dd><strong>Confirmation:</strong> within <strong>7 working days</strong> | <strong>Permanent purge:</strong> within <strong>30 days</strong> (mandatory legal retention obligations may apply).</dd></dl></div>
+          <div class="tl-item"><div class="tl-num">5</div><dl class="tl-content"><dt>May Fair Restaurant Records</dt><dd>May Fair Restaurant may independently retain certain order records (physical or local) for legal and accounting compliance. These records are not held on Aelvra's servers and are outside the scope of this deletion request.</dd></dl></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<footer>
+  <span class="footer-logo">AELVRA</span>
+  <span><a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="mailto:support@aelvra.com">support@aelvra.com</a></span>
+  <span>© 2026 Aelvra. All rights reserved.</span>
+</footer>
+
+<script>
+function goToReview() {
+  let valid = true;
+  const name = document.getElementById('inp-name').value.trim();
+  const fName = document.getElementById('f-name');
+  if (!name) { fName.classList.add('has-error'); valid = false; } else fName.classList.remove('has-error');
+
+  const email = document.getElementById('inp-email').value.trim();
+  const fEmail = document.getElementById('f-email');
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { fEmail.classList.add('has-error'); valid = false; } else fEmail.classList.remove('has-error');
+
+  const phone = document.getElementById('inp-phone').value.trim();
+  const fPhone = document.getElementById('f-phone');
+  if (!phone) { fPhone.classList.add('has-error'); valid = false; } else fPhone.classList.remove('has-error');
+
+  const confirmed = document.getElementById('chk-confirm').checked;
+  const fConfirm = document.getElementById('f-confirm');
+  if (!confirmed) { fConfirm.classList.add('has-error'); valid = false; } else fConfirm.classList.remove('has-error');
+
+  if (!valid) return;
+
+  const reasons = Array.from(document.querySelectorAll('input[name="reason"]:checked')).map(c => c.value).join(', ');
+  document.getElementById('rev-name').textContent = name;
+  document.getElementById('rev-email').textContent = email;
+  document.getElementById('rev-phone').textContent = phone;
+  document.getElementById('rev-reason').textContent = reasons || 'Not specified';
+
+  document.getElementById('step1').style.display = 'none';
+  document.getElementById('what-happens').style.display = 'none';
+  document.getElementById('step2').style.display = 'block';
+
+  setStep(1, 'done'); setStep(2, 'active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function goBack() {
+  document.getElementById('step2').style.display = 'none';
+  document.getElementById('step1').style.display = 'block';
+  document.getElementById('what-happens').style.display = 'block';
+  setStep(2, 'idle'); setStep(1, 'active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function submitRequest() {
+  const name  = document.getElementById('inp-name').value.trim();
+  const email = document.getElementById('inp-email').value.trim();
+  const phone = document.getElementById('inp-phone').value.trim();
+  const note  = document.getElementById('inp-note').value.trim();
+  const reasons = Array.from(document.querySelectorAll('input[name="reason"]:checked')).map(c => c.value).join(', ');
+
+  const body = [
+    'Data Deletion Request — Aelvra × May Fair Restaurant',
+    '──────────────────────────────────────────────────',
+    'Full Name    : ' + name,
+    'Email        : ' + email,
+    'Mobile       : ' + phone,
+    'Reason(s)    : ' + (reasons || 'Not specified'),
+    'Notes        : ' + (note || 'None'),
+    '──────────────────────────────────────────────────',
+    'I formally request permanent deletion of all my personal data from',
+    "Aelvra's cloud servers in accordance with the Privacy Policy.",
+    '',
+    'Submitted via aelvra.in/data-deletion',
+  ].join('\n');
+
+  window.location.href = 'mailto:support@aelvra.com' +
+    '?subject=' + encodeURIComponent('Data Deletion Request — ' + name) +
+    '&body=' + encodeURIComponent(body);
+
+  document.getElementById('step2').style.display = 'none';
+  document.getElementById('successScreen').style.display = 'block';
+  document.getElementById('stepsBar').style.display = 'none';
+  setStep(3, 'done');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function setStep(n, state) {
+  const si = document.getElementById('si' + n);
+  const sd = document.getElementById('sd' + n);
+  si.className = 'step-item' + (state === 'active' ? ' active' : state === 'done' ? ' done' : '');
+  if (state === 'done') sd.textContent = '✓';
+}
+
+// Sidebar active link on scroll
+window.addEventListener('scroll', () => {
+  const sections = ['form-section', 'what-happens'];
+  let current = sections[0];
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && window.scrollY >= el.offsetTop - 120) current = id;
+  });
+  document.querySelectorAll('.nav-item').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+});
+</script>
+
+</body>
+</html>
