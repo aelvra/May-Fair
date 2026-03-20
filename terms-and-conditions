@@ -195,7 +195,7 @@ footer a:hover{color:var(--text);}
           <thead><tr><th>Term</th><th>Meaning</th></tr></thead>
           <tbody>
             <tr><td><strong>"Application" / "App"</strong></td><td>The mobile application and associated platform developed and operated by Aelvra for May Fair Restaurant.</td></tr>
-            <tr><td><strong>"Aelvra"</strong></td><td>The technology partner and platform operator responsible for developing, maintaining, and operating the Application. Contact: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9ff4feedebf6f4dffefaf3e9edfeb1f6f1">[email&#160;protected]</a></td></tr>
+            <tr><td><strong>"Aelvra"</strong></td><td>The technology partner and platform operator responsible for developing, maintaining, and operating the Application. Contact: <a href="mailto:support@aelvra.com">support@aelvra.com</a></td></tr>
             <tr><td><strong>"Restaurant" / "May Fair"</strong></td><td>May Fair Restaurant, Rohru, Himachal Pradesh — 171207, the independent food and beverage business fulfilling all orders placed through the Application.</td></tr>
             <tr><td><strong>"User" / "You"</strong></td><td>Any individual who accesses, registers on, or uses the Application.</td></tr>
             <tr><td><strong>"Order"</strong></td><td>A confirmed request placed by a User through the Application for food items from May Fair Restaurant.</td></tr>
@@ -225,7 +225,7 @@ footer a:hover{color:var(--text);}
     <section class="section" id="s3">
       <div class="section-header"><span class="section-num">03</span><h2>Eligibility</h2></div>
       <ul class="clause-list">
-        <li data-n="(a)"><span><strong>Age:</strong> You must be at least <strong>18 (eighteen) years of age</strong> to use this Application. Age is verified at the point of registration through <strong>Google OAuth</strong> (which requires a valid Google account) or <strong>Mobile OTP verification</strong>. By completing registration through either method, you represent and warrant that you are 18 or older. This requirement is in accordance with the Indian Contract Act, 1872 (Sections 11–12), which mandates legal majority for entering into binding contracts.</span></li>
+        <li data-n="(a)"><span><strong>Age:</strong> You must be at least <strong>18 (eighteen) years of age</strong> to use this Application. Age is verified at registration through <strong>Google OAuth</strong> or <strong>Mobile OTP verification</strong>. By completing registration, you represent and warrant that you are 18 or older. This requirement is in accordance with the Indian Contract Act, 1872 (Sections 11–12), which mandates legal majority for entering into binding contracts.</span></li>
         <li data-n="(b)"><span><strong>Legal Capacity:</strong> You must have the legal capacity to enter into a binding contract under the Indian Contract Act, 1872.</span></li>
         <li data-n="(c)"><span><strong>Accurate Information:</strong> You must provide truthful, accurate, and complete information during registration and at all subsequent interactions.</span></li>
         <li data-n="(d)"><span><strong>Single Account:</strong> Each user may maintain only one registered account. Duplicate or fraudulent accounts are strictly prohibited.</span></li>
@@ -239,22 +239,8 @@ footer a:hover{color:var(--text);}
       <ul class="clause-list">
         <li data-n="(a)"><span><strong>FSSAI Registration:</strong> May Fair Restaurant's FSSAI Basic Registration is currently <strong>in process</strong> under the Food Safety and Standards Act, 2006. Upon receipt, the FSSAI licence number will be displayed within the Application and on all food packaging as required by law. May Fair Restaurant affirms full compliance with applicable food safety standards during this interim period.</span></li>
         <li data-n="(b)"><span><strong>GST Exemption:</strong> May Fair Restaurant is currently exempt from GST registration as annual turnover is below the threshold of ₹20 lakh per year under the CGST Act, 2017. This status will be updated in these Terms and within the Application if and when GST registration becomes applicable.</span></li>
-        <li data-n="(c)"><span><strong>Consumer Protection Compliance:</strong> In accordance with the Consumer Protection (E-Commerce) Rules, 2020, a Grievance Officer has been designated for this Platform. Users may raise grievances related to platform operations, payment issues, or account matters by contacting: <a href="/cdn-cgi/l/email-protection#97e4e2e7e7f8e5e3d7f6f2fbe1e5f6b9f4f8fa"><span class="__cf_email__" data-cfemail="691a1c1919061b1d29080c051f1b08470a0604">[email&#160;protected]</span></a>. Grievances will be acknowledged and addressed within <strong>48 hours</strong> of receipt.</span></li>
+        <li data-n="(c)"><span><strong>Consumer Protection Compliance:</strong> In accordance with the Consumer Protection (E-Commerce) Rules, 2020, a Grievance Officer has been designated for this Platform. Users may raise grievances related to platform operations, payment issues, or account matters by contacting: <a href="mailto:support@aelvra.com">support@aelvra.com</a>. Grievances will be acknowledged and addressed within <strong>48 hours</strong> of receipt.</span></li>
         <li data-n="(d)"><span><strong>IT Act Compliance:</strong> The Application and its operations comply with the Information Technology Act, 2000, and the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021.</span></li>
-      </ul>
-    </section>
-    <!-- 03-B -->
-    <section class="section" id="s3b">
-      <div class="section-header"><span class="section-num">03B</span><h2>DPDP Act 2023 Compliance</h2></div>
-      <div class="callout gold"><span class="callout-icon">§</span><div><strong>Digital Personal Data Protection Act, 2023 —</strong> Aelvra complies with the DPDP Act 2023 as applicable to the processing of digital personal data within India. The following disclosures are made in accordance with this Act.</div></div>
-      <ul class="clause-list">
-        <li data-n="(a)"><span><strong>Data Fiduciary:</strong> Aelvra (Platform Operator) is the Data Fiduciary under the DPDP Act 2023, responsible for determining the purpose and means of processing your personal data.</span></li>
-        <li data-n="(b)"><span><strong>Consent:</strong> By registering and using this Application, you provide free, specific, informed, unconditional, and unambiguous consent for the processing of your personal data as described in the Privacy Policy and these Terms, in accordance with the DPDP Act 2023.</span></li>
-        <li data-n="(c)"><span><strong>Purpose Limitation:</strong> Data is collected and processed exclusively for order processing, account management, and service delivery. No data shall be processed for any other purpose, including marketing, without separate explicit consent.</span></li>
-        <li data-n="(d)"><span><strong>Data Principal Rights:</strong> As a Data Principal under the DPDP Act 2023, you have the right to Access, Correction, Erasure, Grievance Redressal, and Nomination. These rights are detailed and exercisable as described in Section 12 of the Privacy Policy.</span></li>
-        <li data-n="(e)"><span><strong>Data Protection Officer (DPO):</strong> For all matters relating to data protection, privacy, or exercise of your rights under the DPDP Act 2023, contact: <a href="mailto:support@aelvra.com">support@aelvra.com</a>. Grievances will be acknowledged and addressed within <strong>48 (forty-eight) hours</strong> of receipt.</span></li>
-        <li data-n="(f)"><span><strong>Notice:</strong> Data collected through this Application is used solely for the purpose of processing your food orders and managing your account. No personal data is used for marketing, profiling, or any commercial purpose beyond order fulfilment.</span></li>
-        <li data-n="(g)"><span><strong>Withdrawal of Consent:</strong> You may withdraw consent at any time by deleting your account or contacting Aelvra. Withdrawal of consent does not affect the lawfulness of processing prior to withdrawal, and may result in the inability to use the Application.</span></li>
       </ul>
     </section>
     <section class="section" id="s4">
@@ -262,7 +248,7 @@ footer a:hover{color:var(--text);}
       <ul class="clause-list">
         <li data-n="(a)"><span><strong>Responsibility:</strong> You are solely responsible for all activity under your account. Safeguard your login credentials and do not share them with any third party.</span></li>
         <li data-n="(b)"><span><strong>Accuracy:</strong> Ensure that your registered name, email, mobile number, and delivery address are accurate and kept up to date at all times.</span></li>
-        <li data-n="(c)"><span><strong>Unauthorised Access:</strong> Notify Aelvra immediately at <a href="/cdn-cgi/l/email-protection#b2d9d3c0c6dbd9f2d3d7dec4c0d39cdbdc"><span class="__cf_email__" data-cfemail="0e656f7c7a67654e6f6b62787c6f206760">[email&#160;protected]</span></a> upon becoming aware of any unauthorised use of your account.</span></li>
+        <li data-n="(c)"><span><strong>Unauthorised Access:</strong> Notify Aelvra immediately at <a href="mailto:support@aelvra.com">support@aelvra.com</a> upon becoming aware of any unauthorised use of your account.</span></li>
         <li data-n="(d)"><span><strong>Termination:</strong> Aelvra reserves the right to suspend or terminate your account at any time for violation of these Terms, fraudulent activity, or conduct deemed harmful to the Platform or Restaurant.</span></li>
         <li data-n="(e)"><span><strong>Non-Transferable:</strong> Your account is personal and may not be assigned, transferred, or sold to any other person.</span></li>
       </ul>
@@ -345,7 +331,7 @@ footer a:hover{color:var(--text);}
         <li data-n="(c)"><span><strong>GST:</strong> May Fair Restaurant is currently <strong>exempt from GST</strong> as its annual turnover is below the ₹20 lakh threshold under the CGST Act, 2017. No GST is charged on orders at this time. Should turnover exceed this threshold in future, GST registration will be obtained and applicable tax will be disclosed and included in the displayed price prior to checkout.</span></li>
         <li data-n="(d)"><span><strong>Online Payment via Razorpay:</strong> Processed exclusively through Razorpay, a third-party payment gateway. By selecting online payment, you agree to Razorpay's <a href="https://razorpay.com/terms/" target="_blank">Terms of Service</a> and <a href="https://razorpay.com/privacy/" target="_blank">Privacy Policy</a>. A computer-generated receipt is made available in the Application immediately upon successful payment.</span></li>
         <li data-n="(e)"><span><strong>Cash on Delivery (COD):</strong> Where enabled by May Fair Restaurant, cash is collected at the time of delivery. Upon successful delivery and OTP confirmation, a computer-generated digital invoice is issued within the Application. COD availability is at the Restaurant's sole discretion.</span></li>
-        <li data-n="(f)"><span><strong>Payment Failure:</strong> In the event of a failed online payment, no order is placed and no amount is deducted. In cases of erroneous deduction due to technical error, contact Aelvra immediately at <a href="/cdn-cgi/l/email-protection#462d2734322f2d0627232a303427682f28"><span class="__cf_email__" data-cfemail="c3a8a2b1b7aaa883a2a6afb5b1a2edaaad">[email&#160;protected]</span></a>.</span></li>
+        <li data-n="(f)"><span><strong>Payment Failure:</strong> In the event of a failed online payment, no order is placed and no amount is deducted. In cases of erroneous deduction due to technical error, contact Aelvra immediately at <a href="mailto:support@aelvra.com">support@aelvra.com</a>.</span></li>
       </ul>
     </section>
 
@@ -481,27 +467,22 @@ footer a:hover{color:var(--text);}
     <section class="section" id="s18">
       <div class="section-header"><span class="section-num">18</span><h2>Governing Law, Jurisdiction &amp; Dispute Resolution</h2></div>
       <p>These Terms shall be governed by and construed in accordance with the laws of the <strong>Republic of India</strong>.</p>
-
-      <div class="callout blue"><span class="callout-icon">⚖</span><div><strong>Fast &amp; Affordable Resolution:</strong> Both parties agree to the following stepped dispute resolution process before initiating formal legal proceedings. Legal action is always a last resort.</div></div>
-
+      <div class="callout blue"><span class="callout-icon">⚖</span><div><strong>Fast &amp; Affordable Resolution:</strong> Both parties agree to the following stepped dispute resolution process before initiating formal legal proceedings.</div></div>
       <div class="sub-head">Step 1 — Direct Resolution</div>
-      <p>In the event of any dispute, complaint, or claim arising out of or in connection with these Terms, the Services, or any order, you must first contact Aelvra at <a href="mailto:support@aelvra.com">support@aelvra.com</a> or May Fair Restaurant directly, as applicable, and attempt to resolve the matter through good-faith direct communication within <strong>15 (fifteen) days</strong> of raising the issue.</p>
-
+      <p>First contact Aelvra at <a href="mailto:support@aelvra.com">support@aelvra.com</a> or May Fair Restaurant directly and attempt good-faith resolution within <strong>15 days</strong>.</p>
       <div class="sub-head" style="margin-top:24px;">Step 2 — Arbitration</div>
-      <p>If a dispute cannot be resolved through direct communication within 15 days, it shall be referred to and finally resolved by <strong>binding arbitration</strong> under the <strong>Arbitration and Conciliation Act, 1996</strong> (as amended), subject to the following terms:</p>
+      <p>Unresolved disputes go to binding arbitration under the <strong>Arbitration and Conciliation Act, 1996</strong>:</p>
       <ul class="clause-list">
-        <li data-n="(a)"><span><strong>Arbitrator:</strong> A sole arbitrator, mutually agreed upon by the parties. If agreement cannot be reached within 10 days, the arbitrator shall be appointed in accordance with the provisions of the Arbitration and Conciliation Act, 1996.</span></li>
-        <li data-n="(b)"><span><strong>Venue &amp; Seat:</strong> The seat and venue of arbitration shall be <strong>Rohru, Himachal Pradesh</strong>.</span></li>
-        <li data-n="(c)"><span><strong>Language:</strong> Proceedings shall be conducted in English or Hindi.</span></li>
-        <li data-n="(d)"><span><strong>Costs:</strong> Arbitration costs (arbitrator's fees and administrative expenses) shall be split equally between the parties. For claims below <strong>₹1,00,000 (Rupees One Lakh)</strong>, total arbitration costs are capped at <strong>₹10,000 (Rupees Ten Thousand)</strong>.</span></li>
-        <li data-n="(e)"><span><strong>Award:</strong> The arbitration award shall be <strong>final and binding</strong> upon both parties. It shall not be subject to challenge except on grounds expressly permissible under the Arbitration and Conciliation Act, 1996.</span></li>
-        <li data-n="(f)"><span><strong>Consumer Forum Carve-out:</strong> Nothing in this arbitration clause shall prevent a User from approaching the appropriate Consumer Disputes Redressal Commission under the Consumer Protection Act, 2019. This clause applies only to commercial or contractual disputes between the parties.</span></li>
+        <li data-n="(a)"><span><strong>Arbitrator:</strong> Sole arbitrator, mutually agreed. If no agreement within 10 days, appointed per the Act.</span></li>
+        <li data-n="(b)"><span><strong>Venue &amp; Seat:</strong> Rohru, Himachal Pradesh.</span></li>
+        <li data-n="(c)"><span><strong>Language:</strong> English or Hindi.</span></li>
+        <li data-n="(d)"><span><strong>Costs:</strong> Split equally. For claims below ₹1,00,000 — total arbitration costs capped at ₹10,000.</span></li>
+        <li data-n="(e)"><span><strong>Award:</strong> Final and binding on both parties.</span></li>
+        <li data-n="(f)"><span><strong>Consumer Forum Carve-out:</strong> Nothing prevents a User from approaching the Consumer Disputes Redressal Commission under the Consumer Protection Act, 2019.</span></li>
       </ul>
-
       <div class="sub-head" style="margin-top:24px;">Step 3 — Court (Award Challenge Only)</div>
-      <p>Court intervention is available solely for the purpose of challenging or enforcing an arbitration award, in accordance with applicable law. The competent court for such proceedings shall be the <strong>Sub-Divisional Court, Rohru, Himachal Pradesh</strong>.</p>
-
-      <p>The Application is intended for use within India only. Aelvra makes no representation that the Services are appropriate or available outside India.</p>
+      <p>Court intervention available solely for challenging or enforcing an arbitration award. Competent court: <strong>Sub-Divisional Court, Rohru, Himachal Pradesh</strong>.</p>
+      <p>The Application is intended for use within India only.</p>
     </section>
 
     <!-- 19 -->
@@ -512,7 +493,7 @@ footer a:hover{color:var(--text);}
       <div class="contact-block">
         <div class="co-label">Technology Partner · Aelvra</div>
         <div class="contact-row"><span class="cr-key">Entity</span><span class="cr-val">Aelvra</span></div>
-        <div class="contact-row"><span class="cr-key">Email</span><span class="cr-val"><a href="/cdn-cgi/l/email-protection#a7ccc6d5d3cecce7c6c2cbd1d5c689cec9"><span class="__cf_email__" data-cfemail="81eae0f3f5e8eac1e0e4edf7f3e0afe8ef">[email&#160;protected]</span></a></span></div>
+        <div class="contact-row"><span class="cr-key">Email</span><span class="cr-val"><a href="mailto:support@aelvra.com">support@aelvra.com</a></span></div>
         <div class="contact-row"><span class="cr-key">Website</span><span class="cr-val"><a href="https://aelvra.in" target="_blank">aelvra.in</a></span></div>
         <div class="contact-row"><span class="cr-key">Response Time</span><span class="cr-val">Within 7 business days</span></div>
         <div class="contact-row"><span class="cr-key">Scope</span><span class="cr-val">Platform issues, payment errors, account matters, technical support, data requests</span></div>
@@ -534,4 +515,8 @@ footer a:hover{color:var(--text);}
 <footer>
   <span class="footer-logo">AELVRA</span>
   <span>Terms &amp; Conditions · v1.0 · 20 March 2026 · May Fair Restaurant × Aelvra</span>
-  <span>© 2026
+  <span>© 2026 Aelvra. All rights reserved.</span>
+</footer>
+
+</body>
+</html>
