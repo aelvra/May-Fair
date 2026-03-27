@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Terms &amp; Conditions — Aelvra</title>
+<meta name="description" content="Terms and Conditions for Aelvra — Technology Partner & Custom App Development. Governs all engagements under both service models."/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#0a0a0b;--surface:#111113;--border:#222226;--border2:#2e2e34;
+  --gold:#c9a84c;--gold-dim:#7a6430;--text:#e8e8ec;--muted:#6c6c78;
+  --muted2:#4a4a54;--white:#ffffff;
+  --red:#e05252;--red-dim:rgba(224,82,82,0.08);--red-border:rgba(224,82,82,0.2);
+  --blue-dim:rgba(80,140,220,0.07);--blue-border:rgba(80,140,220,0.2);
+  --green-dim:rgba(76,175,125,0.07);--green-border:rgba(76,175,125,0.22);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-weight:300;-webkit-font-smoothing:antialiased;}
+::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-track{background:var(--bg);}::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px;}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;background:rgba(10,10,11,0.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 40px;justify-content:space-between;}
+.topbar-logo{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;letter-spacing:0.12em;color:var(--white);text-decoration:none;}
+.topbar-right{display:flex;align-items:center;gap:16px;}
+.topbar-sub{font-size:11px;color:var(--muted);letter-spacing:0.06em;}
+.topbar-link{font-size:12px;font-weight:400;color:var(--muted);text-decoration:none;letter-spacing:0.06em;transition:color .18s;}
+.topbar-link:hover{color:var(--text);}
+.topbar-label{font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);padding:4px 14px;border-radius:2px;}
+.layout{display:flex;min-height:100vh;padding-top:56px;}
+.sidebar{width:268px;flex-shrink:0;position:sticky;top:56px;height:calc(100vh - 56px);overflow-y:auto;border-right:1px solid var(--border);padding:40px 0;}
+.sidebar-head{font-size:10px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--muted);padding:0 32px 18px;border-bottom:1px solid var(--border);margin-bottom:12px;}
+.nav-item{display:flex;align-items:center;gap:12px;padding:8px 32px;text-decoration:none;font-size:12.5px;font-weight:400;color:var(--muted);transition:color .18s,background .18s;border-left:2px solid transparent;line-height:1.4;}
+.nav-item:hover{color:var(--text);background:rgba(255,255,255,0.03);border-left-color:var(--border2);}
+.nav-item.active{color:var(--gold);border-left-color:var(--gold);background:rgba(201,168,76,0.05);}
+.nav-num{font-size:10px;font-weight:500;color:var(--muted2);min-width:20px;}
+.nav-divider{height:1px;background:var(--border);margin:10px 32px;}
+.content{flex:1;max-width:780px;padding:64px 72px 120px;animation:fadeUp .5s ease both;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+.hero{margin-bottom:72px;padding-bottom:52px;border-bottom:1px solid var(--border);}
+.hero-kicker{font-size:11px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5.5vw,62px);font-weight:600;line-height:1.05;color:var(--white);margin-bottom:8px;letter-spacing:-0.01em;}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;color:var(--muted);margin-bottom:28px;}
+.hero-meta{display:flex;flex-wrap:wrap;gap:28px;margin-bottom:28px;}
+.meta-block dt{font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
+.meta-block dd{font-size:13.5px;color:var(--text);}
+.hero-notice{background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.16);border-left:3px solid var(--gold);padding:16px 20px;font-size:13.5px;line-height:1.75;color:#b0b0bc;border-radius:0 2px 2px 0;}
+.hero-notice strong{color:var(--text);}
+.section{margin-bottom:64px;padding-bottom:64px;border-bottom:1px solid var(--border);opacity:0;animation:fadeUp .45s ease both;}
+.section:nth-child(1){animation-delay:.04s;}.section:nth-child(2){animation-delay:.07s;}.section:nth-child(3){animation-delay:.10s;}.section:nth-child(4){animation-delay:.13s;}.section:nth-child(5){animation-delay:.15s;}.section:nth-child(6){animation-delay:.17s;}.section:nth-child(7){animation-delay:.19s;}.section:nth-child(8){animation-delay:.21s;}.section:nth-child(9){animation-delay:.23s;}.section:nth-child(10){animation-delay:.25s;}.section:nth-child(11){animation-delay:.27s;}.section:nth-child(12){animation-delay:.29s;}.section:nth-child(13){animation-delay:.31s;}.section:nth-child(14){animation-delay:.33s;}.section:nth-child(15){animation-delay:.35s;}.section:nth-child(16){animation-delay:.37s;}.section:nth-child(17){animation-delay:.39s;}.section:nth-child(18){animation-delay:.41s;}
+.section:last-of-type{border-bottom:none;}
+.section-header{display:flex;align-items:baseline;gap:16px;margin-bottom:26px;}
+.section-num{font-family:'Cormorant Garamond',serif;font-size:13px;color:var(--gold-dim);letter-spacing:0.1em;min-width:28px;}
+.section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2.6vw,26px);font-weight:600;color:var(--white);line-height:1.2;letter-spacing:-0.01em;}
+p{font-size:14.5px;line-height:1.88;color:#b0b0bc;margin-bottom:16px;}
+p:last-child{margin-bottom:0;}
+p strong{color:var(--text);font-weight:500;}
+a{color:var(--gold);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.sub-head{font-size:13px;font-weight:600;letter-spacing:0.06em;color:var(--text);margin:24px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+.clause-list{list-style:none;padding:0;margin:16px 0;border:1px solid var(--border);border-radius:4px;overflow:hidden;}
+.clause-list li{display:flex;border-bottom:1px solid var(--border);font-size:14px;color:#b0b0bc;line-height:1.75;}
+.clause-list li:last-child{border-bottom:none;}
+.clause-list li::before{content:attr(data-n);display:flex;align-items:flex-start;justify-content:center;min-width:52px;padding:13px 0;font-size:10.5px;font-weight:600;color:var(--gold);background:rgba(201,168,76,0.04);border-right:1px solid var(--border);font-family:'Outfit',sans-serif;letter-spacing:0.05em;flex-shrink:0;}
+.clause-list li span{padding:13px 20px;display:block;}
+.clause-list li strong{color:var(--text);font-weight:500;}
+.data-wrap{margin:20px 0;border:1px solid var(--border);border-radius:4px;overflow:hidden;overflow-x:auto;}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+thead tr{background:var(--surface);border-bottom:1px solid var(--border2);}
+thead th{padding:12px 16px;text-align:left;font-size:10px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);white-space:nowrap;}
+tbody td{padding:13px 16px;border-bottom:1px solid var(--border);color:#b0b0bc;vertical-align:top;line-height:1.65;}
+tbody tr:last-child td{border-bottom:none;}
+tbody tr:hover td{background:rgba(255,255,255,0.012);}
+tbody td strong{color:var(--text);}
+.callout{display:flex;gap:14px;align-items:flex-start;border-radius:4px;padding:16px 18px;margin:20px 0;font-size:13.5px;line-height:1.75;color:#a0a0b0;}
+.callout.gold{background:rgba(201,168,76,0.05);border:1px solid rgba(201,168,76,0.18);}
+.callout.red{background:var(--red-dim);border:1px solid var(--red-border);}
+.callout.blue{background:var(--blue-dim);border:1px solid var(--blue-border);}
+.callout.green{background:var(--green-dim);border:1px solid var(--green-border);}
+.callout.surface{background:var(--surface);border:1px solid var(--border2);}
+.callout-icon{font-size:15px;flex-shrink:0;margin-top:1px;}
+.callout strong{color:var(--text);}
+.model-split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin:20px 0;}
+.model-col{background:var(--bg);padding:20px 22px;}
+.model-col-head{font-size:10px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.model-col-title{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;color:var(--white);margin-bottom:14px;}
+.model-col ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:8px;}
+.model-col ul li{font-size:13px;color:#b0b0bc;line-height:1.6;padding-left:14px;position:relative;}
+.model-col ul li::before{content:'—';position:absolute;left:0;color:var(--gold-dim);font-size:11px;}
+.flow{display:flex;flex-direction:column;border:1px solid var(--border);border-radius:4px;overflow:hidden;margin:20px 0;}
+.flow-item{display:flex;align-items:flex-start;border-bottom:1px solid var(--border);}
+.flow-item:last-child{border-bottom:none;}
+.flow-badge{min-width:120px;padding:14px 16px;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,0.05);border-right:1px solid var(--border);display:flex;align-items:center;gap:8px;flex-shrink:0;}
+.flow-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+.flow-desc{padding:14px 20px;font-size:13.5px;color:#b0b0bc;line-height:1.7;}
+.flow-desc strong{color:var(--text);}
+.contact-block{margin-top:22px;background:var(--surface);border:1px solid var(--border2);border-top:2px solid var(--gold);border-radius:0 0 4px 4px;padding:28px 32px;}
+.contact-block .co-label{font-size:10px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.contact-row{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);font-size:13.5px;}
+.contact-row:last-child{border-bottom:none;}
+.contact-row .cr-key{color:var(--muted);min-width:100px;font-size:11.5px;padding-top:1px;}
+.contact-row .cr-val{color:var(--text);}
+footer{border-top:1px solid var(--border);padding:28px 72px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--muted2);letter-spacing:0.04em;margin-left:268px;}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;color:var(--muted);letter-spacing:0.1em;}
+footer a{color:var(--muted);text-decoration:none;}
+footer a:hover{color:var(--text);}
+@media(max-width:880px){
+  .sidebar{display:none;}
+  .content{padding:44px 24px 80px;max-width:100%;}
+  footer{margin-left:0;padding:24px;}
+  .topbar{padding:0 20px;}
+  .topbar-sub,.topbar-link{display:none;}
+  .model-split{grid-template-columns:1fr;}
+  .flow-badge{min-width:100px;}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="https://aelvra.in" class="topbar-logo">AELVRA</a>
+  <div class="topbar-right">
+    <span class="topbar-sub">aelvra.in</span>
+    <a href="privacy-policy.html" class="topbar-link">Privacy Policy</a>
+    <span class="topbar-label">Terms &amp; Conditions</span>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="sidebar">
+    <div class="sidebar-head">Contents</div>
+    <a class="nav-item active" href="#s1"><span class="nav-num">01</span>Definitions</a>
+    <a class="nav-item" href="#s2"><span class="nav-num">02</span>Acceptance of Terms</a>
+    <a class="nav-item" href="#s3"><span class="nav-num">03</span>Service Models</a>
+    <a class="nav-item" href="#s4"><span class="nav-num">04</span>Engagement Process</a>
+    <a class="nav-item" href="#s5"><span class="nav-num">05</span>Fees &amp; Payment</a>
+    <a class="nav-item" href="#s6"><span class="nav-num">06</span>Scope &amp; Revisions</a>
+    <a class="nav-item" href="#s7"><span class="nav-num">07</span>Project Timeline</a>
+    <a class="nav-item" href="#s8"><span class="nav-num">08</span>Intellectual Property</a>
+    <a class="nav-item" href="#s9"><span class="nav-num">09</span>Hosting &amp; Maintenance</a>
+    <a class="nav-item" href="#s10"><span class="nav-num">10</span>Third-Party Support Policy</a>
+    <a class="nav-item" href="#s11"><span class="nav-num">11</span>Client Obligations</a>
+    <a class="nav-item" href="#s12"><span class="nav-num">12</span>Confidentiality</a>
+    <a class="nav-item" href="#s13"><span class="nav-num">13</span>Warranties &amp; Disclaimers</a>
+    <a class="nav-item" href="#s14"><span class="nav-num">14</span>Limitation of Liability</a>
+    <a class="nav-item" href="#s15"><span class="nav-num">15</span>Termination</a>
+    <a class="nav-item" href="#s16"><span class="nav-num">16</span>Refund Policy</a>
+    <a class="nav-item" href="#s17"><span class="nav-num">17</span>Indemnification</a>
+    <a class="nav-item" href="#s18"><span class="nav-num">18</span>Governing Law</a>
+    <a class="nav-item" href="#s19"><span class="nav-num">19</span>Amendments</a>
+    <a class="nav-item" href="#s20"><span class="nav-num">20</span>Contact</a>
+    <div class="nav-divider"></div>
+    <a class="nav-item" href="privacy-policy.html"><span class="nav-num">↗</span>Privacy Policy</a>
+    <a class="nav-item" href="https://aelvra.in"><span class="nav-num">↗</span>Back to aelvra.in</a>
+  </nav>
+
+  <main class="content">
+    <div class="hero">
+      <div class="hero-kicker">Legal Document · aelvra.in</div>
+      <h1>Terms &amp;<br/>Conditions</h1>
+      <div class="hero-sub">Aelvra — Technology Partner &amp; App Development</div>
+      <div class="hero-meta">
+        <dl class="meta-block"><dt>Effective Date</dt><dd>27 March 2026</dd></dl>
+        <dl class="meta-block"><dt>Last Revised</dt><dd>27 March 2026</dd></dl>
+        <dl class="meta-block"><dt>Governing Law</dt><dd>Republic of India</dd></dl>
+        <dl class="meta-block"><dt>Version</dt><dd>1.1</dd></dl>
+      </div>
+      <div class="hero-notice">
+        By engaging Aelvra's services, confirming a proposal, or making any payment, you unconditionally agree to be bound by these Terms &amp; Conditions. These Terms apply to both service models offered by Aelvra and form a legally binding agreement between you ("Partner" or "Client") and Aelvra under the <strong>Indian Contract Act, 1872</strong>.
+      </div>
+    </div>
+
+    <!-- 01 -->
+    <section class="section" id="s1">
+      <div class="section-header"><span class="section-num">01</span><h2>Definitions</h2></div>
+      <div class="data-wrap">
+        <table>
+          <thead><tr><th>Term</th><th>Meaning</th></tr></thead>
+          <tbody>
+            <tr><td><strong>"Aelvra"</strong></td><td>The technology services company operating at aelvra.in ("we", "us", "our")</td></tr>
+            <tr><td><strong>"Partner"</strong></td><td>A business engaging Aelvra under the Technology Partnership (SaaS) model</td></tr>
+            <tr><td><strong>"Client"</strong></td><td>A business or individual engaging Aelvra under the Custom Build model</td></tr>
+            <tr><td><strong>"Agreement"</strong></td><td>These Terms &amp; Conditions together with the Proposal accepted by the Partner or Client</td></tr>
+            <tr><td><strong>"Proposal"</strong></td><td>The written document issued by Aelvra detailing scope, deliverables, fees, and timeline for a specific engagement</td></tr>
+            <tr><td><strong>"Application"</strong></td><td>The web or mobile application designed and built by Aelvra under the engagement</td></tr>
+            <tr><td><strong>"Deliverables"</strong></td><td>All application builds, design files, source code, documentation, and related outputs produced by Aelvra</td></tr>
+            <tr><td><strong>"Fees"</strong></td><td>All amounts payable by the Partner or Client to Aelvra as agreed in the Proposal</td></tr>
+            <tr><td><strong>"Commission"</strong></td><td>The ongoing percentage or fixed amount payable by the Partner to Aelvra under the Technology Partnership model</td></tr>
+            <tr><td><strong>"Handover"</strong></td><td>The formal transfer of the Application and/or source code from Aelvra to the Client under the Custom Build model upon fulfilment of agreed conditions</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 02 -->
+    <section class="section" id="s2">
+      <div class="section-header"><span class="section-num">02</span><h2>Acceptance of Terms</h2></div>
+      <p>Acceptance of these Terms is deemed to have occurred upon any of the following:</p>
+      <ul class="clause-list">
+        <li data-n="(a)"><span>Written or verbal confirmation of a Proposal issued by Aelvra (including via email or messaging platform).</span></li>
+        <li data-n="(b)"><span>Any full or partial payment of Fees to Aelvra in connection with an engagement.</span></li>
+        <li data-n="(c)"><span>Provision of project assets, content, or materials to Aelvra for use in development.</span></li>
+        <li data-n="(d)"><span>Access to or use of any Deliverable produced by Aelvra.</span></li>
+      </ul>
+    </section>
+
+    <!-- 03 -->
+    <section class="section" id="s3">
+      <div class="section-header"><span class="section-num">03</span><h2>Service Models</h2></div>
+      <p>Aelvra operates under two distinct service models. The applicable model will be specified in the Proposal. All terms in this document apply to both models unless stated otherwise.</p>
+
+      <div class="model-split">
+        <div class="model-col">
+          <div class="model-col-head">Model A</div>
+          <div class="model-col-title">Technology Partnership</div>
+          <ul>
+            <li>Aelvra builds and <strong>retains ownership</strong> of the Application</li>
+            <li>Partner uses the Application under an ongoing agreement</li>
+            <li>Aelvra handles all hosting, infrastructure &amp; maintenance</li>
+            <li>Partner pays a <strong>commission and/or recurring fees</strong> as agreed</li>
+            <li>Server and operational costs billed to Partner as per agreement</li>
+            <li>Aelvra remains platform operator throughout the partnership</li>
+          </ul>
+        </div>
+        <div class="model-col">
+          <div class="model-col-head">Model B</div>
+          <div class="model-col-title">Custom Build</div>
+          <ul>
+            <li>Aelvra builds a fully custom Application for the Client</li>
+            <li>Upon Handover, <strong>Client owns the Application</strong></li>
+            <li>Source code transferred as per conditions in the Proposal</li>
+            <li>Client may use Aelvra or any other party for maintenance</li>
+            <li><strong>If third-party maintenance is engaged, Aelvra support ends permanently</strong></li>
+            <li>One-time development fee; ongoing costs are Client's responsibility</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout gold">
+        <span class="callout-icon">§</span>
+        <div>The specific model, fees, scope, and conditions applicable to your engagement are defined in the Proposal. In case of conflict between these Terms and a signed written agreement, the signed agreement prevails.</div>
+      </div>
+    </section>
+
+    <!-- 04 -->
+    <section class="section" id="s4">
+      <div class="section-header"><span class="section-num">04</span><h2>Engagement Process</h2></div>
+      <p>All engagements with Aelvra follow a structured process to ensure clarity and accountability:</p>
+      <div class="flow">
+        <div class="flow-item">
+          <div class="flow-badge"><span class="dot"></span>Step 01</div>
+          <div class="flow-desc"><strong>Initial Enquiry:</strong> Partner or Client contacts Aelvra at <a href="mailto:contact@aelvra.in">contact@aelvra.in</a> with their project requirements. Aelvra responds within 7 business days.</div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-badge"><span class="dot"></span>Step 02</div>
+          <div class="flow-desc"><strong>Discussion &amp; Proposal:</strong> Aelvra and the Partner/Client discuss the scope, service model, fees, timeline, commission terms (if applicable), and all other engagement conditions. Aelvra then issues a written Proposal. The Proposal is valid for 14 days from issue.</div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-badge"><span class="dot"></span>Step 03</div>
+          <div class="flow-desc"><strong>Acceptance &amp; Payment:</strong> Partner/Client confirms acceptance of the Proposal and makes the agreed initial payment as specified therein. Development begins upon receipt of payment and all required initial assets.</div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-badge"><span class="dot"></span>Step 04</div>
+          <div class="flow-desc"><strong>Design &amp; Development:</strong> Aelvra develops the Application per the agreed scope. Progress updates are shared at milestones defined in the Proposal.</div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-badge"><span class="dot"></span>Step 05</div>
+          <div class="flow-desc"><strong>Review &amp; Revisions:</strong> Partner/Client reviews Deliverables and may request revisions within the policy defined in Section 6. Feedback must be submitted within the review window in the Proposal.</div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-badge"><span class="dot"></span>Step 06</div>
+          <div class="flow-desc"><strong>Launch / Handover:</strong> <em>Model A —</em> Application is deployed and the partnership goes live. <em>Model B —</em> Final payment is received, Application is deployed, and Handover (including source code where agreed) is completed.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 -->
+    <section class="section" id="s5">
+      <div class="section-header"><span class="section-num">05</span><h2>Fees &amp; Payment</h2></div>
+      <p>All fees, payment structure, commission rates, server cost arrangements, and billing schedules are <strong>individually discussed and mutually agreed upon before each engagement commences</strong>, and are documented in the Proposal. Aelvra does not apply a fixed or standard fee structure — all financial terms are specific to each engagement.</p>
+
+      <div class="sub-head">General Payment Principles</div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Agreed Terms:</strong> The payment schedule, amounts, and milestones applicable to your engagement are as set out in the Proposal. No development work commences until the initial payment agreed in the Proposal has been received.</span></li>
+        <li data-n="(b)"><span><strong>Currency:</strong> All Fees are quoted and payable in <strong>Indian Rupees (INR)</strong> unless otherwise stated in the Proposal.</span></li>
+        <li data-n="(c)"><span><strong>Payment Methods:</strong> Bank transfer (NEFT/IMPS/UPI), Razorpay payment link, or any other method specified by Aelvra in the invoice.</span></li>
+        <li data-n="(d)"><span><strong>GST:</strong> Applicable GST will be charged as per Indian tax regulations and reflected in the invoice.</span></li>
+        <li data-n="(e)"><span><strong>Invoicing:</strong> Aelvra will issue a formal invoice for all payments. Invoices are due on the date specified therein.</span></li>
+      </ul>
+
+      <div class="sub-head">Technology Partnership (Model A) — Additional Terms</div>
+      <ul class="clause-list">
+        <li data-n="(f)"><span><strong>Commission:</strong> The commission rate, calculation method, and payment frequency applicable to the partnership are as agreed in the Proposal. Commission becomes payable as per the billing cycle specified.</span></li>
+        <li data-n="(g)"><span><strong>Server &amp; Operational Costs:</strong> Costs related to hosting, server infrastructure, third-party APIs, and platform operations are billed to the Partner as agreed. These charges are in addition to any commission and are invoiced at actuals or as flat fees as specified in the Proposal.</span></li>
+        <li data-n="(h)"><span><strong>Non-Payment:</strong> Failure to pay any due amount may result in temporary suspension of the Application until the outstanding amount is settled. Aelvra will notify the Partner before any suspension.</span></li>
+      </ul>
+
+      <div class="sub-head">Custom Build (Model B) — Additional Terms</div>
+      <ul class="clause-list">
+        <li data-n="(i)"><span><strong>Milestone Payments:</strong> For Custom Build projects, payments are typically structured across milestones as defined in the Proposal. Each milestone payment is due before the corresponding deliverable is released or the next phase commences.</span></li>
+        <li data-n="(j)"><span><strong>Handover Condition:</strong> No Handover of the Application, source code, or deployment access will occur until all agreed Fees have been paid in full.</span></li>
+      </ul>
+
+      <div class="callout red">
+        <span class="callout-icon">⚠</span>
+        <div><strong>No Deliverable — including designs, builds, source code, or live access — will be transferred to any Partner or Client until all outstanding Fees have been settled in full.</strong></div>
+      </div>
+    </section>
+
+    <!-- 06 -->
+    <section class="section" id="s6">
+      <div class="section-header"><span class="section-num">06</span><h2>Scope &amp; Revision Policy</h2></div>
+      <p>The scope of each engagement is defined in the Proposal. Aelvra will build the features and functionality explicitly described therein.</p>
+
+      <div class="sub-head">Scope Changes</div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Out-of-Scope Requests:</strong> Any feature, functionality, or change not included in the original Proposal is an out-of-scope request. Such requests will be assessed separately and quoted as an additional Change Order before any work begins.</span></li>
+        <li data-n="(b)"><span><strong>Timeline Impact:</strong> Approved scope changes will extend the project timeline accordingly, as communicated in the Change Order.</span></li>
+      </ul>
+
+      <div class="sub-head">Revision Policy</div>
+      <ul class="clause-list">
+        <li data-n="(c)"><span><strong>Free Revisions:</strong> Each project includes <strong>2 (two) rounds of minor revisions</strong> at no additional charge. These must be submitted within the review window specified in the Proposal.</span></li>
+        <li data-n="(d)"><span><strong>What Counts as a Minor Revision:</strong> Minor revisions include small adjustments to existing elements — such as text changes, colour tweaks, layout nudges, or small functional corrections — that do not alter the overall design, structure, or logic of the Application.</span></li>
+        <li data-n="(e)"><span><strong>What Does NOT Count as a Revision:</strong> The following are <strong>not</strong> covered under free revision rounds and will be treated as out-of-scope work requiring a Change Order: redesigning entire screens or modules from scratch; adding new features or flows; changing core application logic or architecture; altering agreed user flows substantially; or any request that requires significant additional development time.</span></li>
+        <li data-n="(f)"><span><strong>Additional Revisions:</strong> Revision rounds beyond the included 2 will be charged at a rate communicated by Aelvra in writing prior to commencement.</span></li>
+      </ul>
+
+      <div class="callout blue">
+        <span class="callout-icon">ℹ</span>
+        <div>When in doubt about whether a request qualifies as a minor revision or a scope change, ask Aelvra before submitting — we will clarify in writing before any work begins.</div>
+      </div>
+    </section>
+
+    <!-- 07 -->
+    <section class="section" id="s7">
+      <div class="section-header"><span class="section-num">07</span><h2>Project Timeline &amp; Delays</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Start of Timeline:</strong> The project timeline begins from the date Aelvra receives both the agreed initial payment and all required initial project assets from the Partner/Client.</span></li>
+        <li data-n="(b)"><span><strong>Client-Caused Delays:</strong> Delays due to late asset provision, delayed feedback, delayed payments, or delayed approvals from the Partner/Client will extend the timeline accordingly. Aelvra will not be liable for such delays.</span></li>
+        <li data-n="(c)"><span><strong>Scope Changes:</strong> Approved Change Orders extend the timeline as stated in the Change Order.</span></li>
+        <li data-n="(d)"><span><strong>Aelvra-Caused Delays:</strong> If Aelvra anticipates a delay, it will notify the Partner/Client in writing with a revised timeline as early as practicable.</span></li>
+        <li data-n="(e)"><span><strong>Force Majeure:</strong> Aelvra is not liable for delays caused by events outside its reasonable control — including infrastructure failures, third-party API outages, or government actions.</span></li>
+      </ul>
+    </section>
+
+    <!-- 08 -->
+    <section class="section" id="s8">
+      <div class="section-header"><span class="section-num">08</span><h2>Intellectual Property Rights</h2></div>
+
+      <div class="sub-head">Technology Partnership (Model A)</div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Aelvra Retains Ownership:</strong> Under the Technology Partnership model, the Application — including all code, design, architecture, and infrastructure — remains the <strong>exclusive intellectual property of Aelvra</strong> throughout the duration of the partnership. The Partner is granted a licence to use the Application solely for their business operations under the active partnership.</span></li>
+        <li data-n="(b)"><span><strong>No Source Code Transfer:</strong> Under this model, no source code, design files, or backend access is transferred to the Partner unless separately agreed in writing.</span></li>
+        <li data-n="(c)"><span><strong>Upon Termination:</strong> If the partnership is terminated for any reason, the Partner's licence to use the Application ceases. Data portability terms are as agreed in the Proposal.</span></li>
+      </ul>
+
+      <div class="sub-head">Custom Build (Model B)</div>
+      <ul class="clause-list">
+        <li data-n="(d)"><span><strong>Ownership Transfer at Handover:</strong> Upon receipt of full payment and fulfilment of all agreed Handover conditions, Aelvra assigns to the Client all rights, title, and interest in the custom Application and, where stipulated in the Proposal, its source code.</span></li>
+        <li data-n="(e)"><span><strong>Prior to Full Payment:</strong> Until Handover conditions are fully met, all Deliverables remain the exclusive property of Aelvra.</span></li>
+        <li data-n="(f)"><span><strong>Aelvra's Pre-Existing IP:</strong> Aelvra retains ownership of its pre-existing frameworks, tools, and reusable components. A perpetual, non-exclusive licence to use such components within the delivered Application is included as part of the Handover.</span></li>
+      </ul>
+
+      <div class="sub-head">Client-Provided Assets (Both Models)</div>
+      <ul class="clause-list">
+        <li data-n="(g)"><span>All branding, logos, content, and materials provided by the Partner/Client remain their property. Aelvra is granted a limited licence to use these solely for the purpose of building the Application.</span></li>
+        <li data-n="(h)"><span>The Partner/Client warrants that all assets provided are owned by them or properly licensed. Aelvra is not liable for third-party IP claims arising from client-provided materials.</span></li>
+      </ul>
+
+      <div class="sub-head">Portfolio</div>
+      <ul class="clause-list">
+        <li data-n="(i)"><span>Aelvra reserves the right to reference completed projects in its portfolio and marketing materials. The Partner/Client may request exclusion from Aelvra's portfolio in writing at any time.</span></li>
+      </ul>
+    </section>
+
+    <!-- 09 -->
+    <section class="section" id="s9">
+      <div class="section-header"><span class="section-num">09</span><h2>Hosting &amp; Maintenance</h2></div>
+
+      <div class="sub-head">Technology Partnership (Model A)</div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Full Management by Aelvra:</strong> Under the Technology Partnership model, Aelvra is exclusively responsible for all hosting, server management, infrastructure maintenance, application updates, bug fixes, and platform operations. The Partner does not manage any technical infrastructure.</span></li>
+        <li data-n="(b)"><span><strong>Costs:</strong> All server, hosting, and operational costs are billed to the Partner as agreed in the Proposal.</span></li>
+      </ul>
+
+      <div class="sub-head">Custom Build (Model B) — Post Handover</div>
+      <ul class="clause-list">
+        <li data-n="(c)"><span><strong>Post-Launch Support:</strong> Following launch, Aelvra provides a bug-fix support period as specified in the Proposal. During this period, Aelvra will fix bugs at no additional charge.</span></li>
+        <li data-n="(d)"><span><strong>Post-Support Maintenance:</strong> After the included support period, the Client may engage Aelvra for ongoing maintenance under a separate agreement, or may engage any other party of their choosing.</span></li>
+        <li data-n="(e)"><span><strong>Hosting Responsibility:</strong> Following Handover, hosting and infrastructure responsibility passes entirely to the Client, whether they choose Aelvra-managed hosting or their own provider.</span></li>
+      </ul>
+    </section>
+
+    <!-- 10 -->
+    <section class="section" id="s10">
+      <div class="section-header"><span class="section-num">10</span><h2>Third-Party Maintenance Policy</h2></div>
+      <p>This section applies specifically to the <strong>Custom Build (Model B)</strong> post-Handover.</p>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Freedom of Choice:</strong> After Handover, the Client is free to engage any third-party development company or individual for maintenance, updates, or modifications to the Application.</span></li>
+        <li data-n="(b)"><span><strong>Permanent Withdrawal of Aelvra Support:</strong> If the Client engages any third party to perform maintenance, modification, or development work on the Application post-Handover, <strong>Aelvra will permanently cease to provide any technical support, maintenance, bug fixes, or updates for that Application</strong>. This withdrawal is immediate and irrevocable from the point at which third-party work is performed.</span></li>
+        <li data-n="(c)"><span><strong>No Exceptions:</strong> Aelvra will not resume support for an Application that has been modified by a third party, regardless of the nature or extent of the modification.</span></li>
+        <li data-n="(d)"><span><strong>No Liability:</strong> Aelvra accepts no responsibility or liability for any issues, bugs, data loss, security vulnerabilities, or failures arising in an Application that has been modified by a third party post-Handover.</span></li>
+      </ul>
+      <div class="callout red">
+        <span class="callout-icon">⚠</span>
+        <div><strong>Important:</strong> If you intend to use Aelvra for ongoing maintenance after Handover, do not engage any third party to modify the Application. Once a third party touches the codebase, Aelvra's support for that Application ends permanently.</div>
+      </div>
+    </section>
+
+    <!-- 11 -->
+    <section class="section" id="s11">
+      <div class="section-header"><span class="section-num">11</span><h2>Client &amp; Partner Obligations</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Asset Provision:</strong> Provide all required assets (logos, content, credentials, etc.) promptly as requested. Delays in asset provision will delay the project.</span></li>
+        <li data-n="(b)"><span><strong>Accurate Information:</strong> Ensure all information and materials provided to Aelvra are accurate, complete, and do not infringe third-party rights.</span></li>
+        <li data-n="(c)"><span><strong>Timely Feedback:</strong> Review Deliverables and provide clear, structured feedback within the review window in the Proposal. Delayed or vague feedback may cause project delays.</span></li>
+        <li data-n="(d)"><span><strong>Designated Contact:</strong> Maintain a single point of contact with authority to approve decisions on behalf of the organisation. Conflicting instructions from multiple individuals may be treated as a scope change.</span></li>
+        <li data-n="(e)"><span><strong>Legal Compliance:</strong> The Partner/Client is solely responsible for ensuring the Application's content, services, and operations comply with all applicable laws in the jurisdictions where it is operated.</span></li>
+        <li data-n="(f)"><span><strong>Third-Party Accounts:</strong> Where the project requires accounts the Client owns (e.g., Google Play, Apple App Store, payment gateway accounts), the Client is responsible for creating and maintaining these. Aelvra may assist but will not own such accounts.</span></li>
+      </ul>
+    </section>
+
+    <!-- 12 -->
+    <section class="section" id="s12">
+      <div class="section-header"><span class="section-num">12</span><h2>Confidentiality</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Aelvra's Obligations:</strong> Aelvra will keep all Partner/Client project information, business data, and materials strictly confidential and will not disclose them to any third party without prior written consent, except as required to perform the Services or by law.</span></li>
+        <li data-n="(b)"><span><strong>Partner/Client Obligations:</strong> The Partner/Client will keep confidential Aelvra's proprietary development methodologies, pricing, and internal technical information disclosed during the engagement.</span></li>
+        <li data-n="(c)"><span><strong>Duration:</strong> Confidentiality obligations survive the end of the Agreement for <strong>3 years</strong>.</span></li>
+        <li data-n="(d)"><span><strong>Exceptions:</strong> Obligations do not apply to information that is publicly available through no fault of the receiving party, was already known to them, or must be disclosed by law or court order.</span></li>
+      </ul>
+    </section>
+
+    <!-- 13 -->
+    <section class="section" id="s13">
+      <div class="section-header"><span class="section-num">13</span><h2>Warranties &amp; Disclaimers</h2></div>
+      <p>Aelvra warrants that the Services will be performed with reasonable skill and care, and that Deliverables will substantially conform to the agreed Proposal at the time of delivery.</p>
+      <p>Aelvra does <strong>not</strong> warrant that:</p>
+      <ul class="clause-list">
+        <li data-n="(a)"><span>Third-party services integrated into the Application (payment gateways, push notifications, maps, etc.) will remain available or unchanged — Aelvra is not responsible for third-party provider changes.</span></li>
+        <li data-n="(b)"><span>The Application will achieve any specific business outcome, revenue target, or commercial result for the Partner/Client.</span></li>
+        <li data-n="(c)"><span>The Application will remain compatible with future OS versions, browser updates, or device models released after delivery, unless covered under an active maintenance agreement with Aelvra.</span></li>
+        <li data-n="(d)"><span>An Application modified by a third party post-Handover will remain stable, secure, or functional. Aelvra makes no warranties in respect of third-party modifications.</span></li>
+      </ul>
+    </section>
+
+    <!-- 14 -->
+    <section class="section" id="s14">
+      <div class="section-header"><span class="section-num">14</span><h2>Limitation of Liability</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Cap:</strong> Aelvra's total liability to the Partner/Client for any claim under this Agreement shall not exceed the total Fees actually paid by the Partner/Client to Aelvra for the specific engagement giving rise to the claim.</span></li>
+        <li data-n="(b)"><span><strong>Exclusions:</strong> Aelvra shall not be liable for indirect, incidental, consequential, or punitive damages — including loss of revenue, profits, data, or business — even if advised of the possibility of such loss.</span></li>
+        <li data-n="(c)"><span><strong>Third-Party Services:</strong> Aelvra is not liable for losses arising from the failure or unavailability of any third-party service.</span></li>
+        <li data-n="(d)"><span><strong>Post-Handover (Third-Party Modified):</strong> Aelvra accepts zero liability for any issue, loss, or damage arising in an Application that has been modified by a third party following Handover.</span></li>
+      </ul>
+      <div class="callout surface">
+        <span class="callout-icon">§</span>
+        <div>Nothing in these Terms excludes liability that cannot lawfully be excluded under applicable Indian law, including liability for fraud or wilful misconduct.</div>
+      </div>
+    </section>
+
+    <!-- 15 -->
+    <section class="section" id="s15">
+      <div class="section-header"><span class="section-num">15</span><h2>Termination</h2></div>
+
+      <div class="sub-head">Technology Partnership (Model A)</div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Notice Period:</strong> Either party may terminate the partnership with written notice as specified in the Proposal (typically 30–60 days). The partnership continues in full during the notice period.</span></li>
+        <li data-n="(b)"><span><strong>Outstanding Fees:</strong> All outstanding commission, server costs, and fees up to the termination date become immediately due and payable.</span></li>
+        <li data-n="(c)"><span><strong>Application Access:</strong> Upon termination, the Partner's access to and licence for the Application ceases. As Aelvra owns the Application under this model, it will not be transferred to the Partner.</span></li>
+      </ul>
+
+      <div class="sub-head">Custom Build (Model B)</div>
+      <ul class="clause-list">
+        <li data-n="(d)"><span><strong>Client Termination:</strong> The Client may terminate the engagement with written notice. The refund policy in Section 16 applies.</span></li>
+        <li data-n="(e)"><span><strong>Aelvra Termination:</strong> Aelvra may terminate the engagement immediately if the Client fails to make payment when due, provides fraudulent information, or requests illegal or harmful content to be built.</span></li>
+        <li data-n="(f)"><span><strong>Fees on Termination:</strong> All Fees for work completed to the termination date become immediately due. Completed Deliverables are released upon settlement of outstanding amounts.</span></li>
+      </ul>
+
+      <div class="sub-head">Both Models — Surviving Clauses</div>
+      <ul class="clause-list">
+        <li data-n="(g)"><span>Sections 8 (IP), 10 (Third-Party Policy), 12 (Confidentiality), 13 (Warranties), 14 (Liability), 17 (Indemnification), and 18 (Governing Law) survive termination of the Agreement.</span></li>
+      </ul>
+    </section>
+
+    <!-- 16 -->
+    <section class="section" id="s16">
+      <div class="section-header"><span class="section-num">16</span><h2>Refund Policy</h2></div>
+      <p>Refund terms are specific to each model:</p>
+
+      <div class="sub-head">Technology Partnership (Model A)</div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span>Commission and recurring fees paid are <strong>non-refundable</strong> as they correspond to services actively rendered during the billing period. Server and operational costs already incurred are non-refundable.</span></li>
+      </ul>
+
+      <div class="sub-head">Custom Build (Model B)</div>
+      <div class="data-wrap">
+        <table>
+          <thead><tr><th>Stage at Termination</th><th>Refund Position</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Before development commences</strong> (payment received, no work started)</td><td>Full refund of amounts paid, less a reasonable administrative processing fee as communicated in writing</td></tr>
+            <tr><td><strong>Development in early stages</strong> (less than ~25% complete)</td><td>Partial refund of amounts paid, less the value of work completed, as assessed and communicated by Aelvra</td></tr>
+            <tr><td><strong>Development significantly underway</strong> (approximately 25% or more complete)</td><td>No refund on amounts paid; Client receives all completed Deliverables upon settlement of any outstanding balance</td></tr>
+            <tr><td><strong>Post-Handover</strong> (Application deployed and/or source code transferred)</td><td>No refund. Post-delivery issues are addressed through the revision and support process</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul class="clause-list">
+        <li data-n="(b)"><span><strong>Third-Party Costs:</strong> Any third-party costs incurred on the Client's behalf (domain registrations, API subscriptions, etc.) are non-refundable in all cases.</span></li>
+        <li data-n="(c)"><span><strong>Refund Processing:</strong> Where a refund is due, it will be processed within 30 working days of written confirmation, once bank details are provided.</span></li>
+      </ul>
+    </section>
+
+    <!-- 17 -->
+    <section class="section" id="s17">
+      <div class="section-header"><span class="section-num">17</span><h2>Indemnification</h2></div>
+      <p>The Partner/Client agrees to indemnify and hold harmless Aelvra from any claims, damages, liabilities, or expenses (including legal fees) arising from:</p>
+      <ul class="clause-list">
+        <li data-n="(a)"><span>The Partner/Client's operation or use of the Application, including all content, services, and data within it.</span></li>
+        <li data-n="(b)"><span>Client-provided assets or content that infringe third-party intellectual property or privacy rights.</span></li>
+        <li data-n="(c)"><span>Any breach of these Terms or applicable law by the Partner/Client.</span></li>
+        <li data-n="(d)"><span>Disputes between the Partner/Client and their own end-users.</span></li>
+        <li data-n="(e)"><span>Any modification made to the Application by a third party post-Handover, and any consequence thereof.</span></li>
+      </ul>
+    </section>
+
+    <!-- 18 -->
+    <section class="section" id="s18">
+      <div class="section-header"><span class="section-num">18</span><h2>Governing Law &amp; Disputes</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Governing Law:</strong> This Agreement is governed by the laws of the <strong>Republic of India</strong>, including the Indian Contract Act, 1872; IT Act, 2000; and DPDP Act, 2023.</span></li>
+        <li data-n="(b)"><span><strong>Jurisdiction:</strong> Any legal proceedings shall be subject to the exclusive jurisdiction of the courts of <strong>Himachal Pradesh, India</strong>.</span></li>
+        <li data-n="(c)"><span><strong>Informal Resolution First:</strong> Before initiating formal proceedings, both parties agree to attempt good-faith resolution through direct communication for a period of 30 days from written notice of the dispute.</span></li>
+        <li data-n="(d)"><span><strong>Arbitration:</strong> If informal resolution fails, either party may refer the matter to binding arbitration under the Arbitration and Conciliation Act, 1996, with a single mutually agreed arbitrator.</span></li>
+      </ul>
+    </section>
+
+    <!-- 19 -->
+    <section class="section" id="s19">
+      <div class="section-header"><span class="section-num">19</span><h2>Amendments</h2></div>
+      <p>Aelvra reserves the right to update these Terms at any time. Updated Terms will be published at <a href="https://aelvra.in/terms-and-conditions.html">aelvra.in/terms-and-conditions.html</a> with a revised date. For active engagements, material changes will be communicated in writing before taking effect. Continued engagement after the effective date of any revision constitutes acceptance.</p>
+    </section>
+
+    <!-- 20 -->
+    <section class="section" id="s20">
+      <div class="section-header"><span class="section-num">20</span><h2>Contact</h2></div>
+      <p>For any queries, clarifications, or formal communications regarding these Terms, contact Aelvra at:</p>
+      <div class="contact-block">
+        <div class="co-label">Aelvra — Legal &amp; General Contact</div>
+        <div class="contact-row"><span class="cr-key">Organisation</span><span class="cr-val">Aelvra</span></div>
+        <div class="contact-row"><span class="cr-key">Email (Legal)</span><span class="cr-val"><a href="mailto:contact@aelvra.in">contact@aelvra.in</a></span></div>
+        <div class="contact-row"><span class="cr-key">Email (Support)</span><span class="cr-val"><a href="mailto:support@aelvra.in">support@aelvra.in</a></span></div>
+        <div class="contact-row"><span class="cr-key">Website</span><span class="cr-val"><a href="https://aelvra.in">aelvra.in</a></span></div>
+        <div class="contact-row"><span class="cr-key">Response</span><span class="cr-val">Within 7 business days</span></div>
+        <div class="contact-row"><span class="cr-key">Jurisdiction</span><span class="cr-val">Himachal Pradesh, Republic of India</span></div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <span class="footer-logo">AELVRA</span>
+  <div style="display:flex;gap:20px;flex-wrap:wrap;">
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="https://aelvra.in">aelvra.in</a>
+    <a href="mailto:contact@aelvra.in">contact@aelvra.in</a>
+    <a href="mailto:support@aelvra.in">support@aelvra.in</a>
+  </div>
+  <span>© 2026 Aelvra. All rights reserved.</span>
+</footer>
+
+<script>
+const sections = document.querySelectorAll('section[id]');
+const navItems = document.querySelectorAll('.nav-item[href^="#"]');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navItems.forEach(n => n.classList.remove('active'));
+      const active = document.querySelector(`.nav-item[href="#${entry.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Privacy Policy — Aelvra</title>
+<meta name="description" content="Privacy Policy for Aelvra — Technology Partner & Custom App Development. Governs how Aelvra collects, processes, and protects data from website visitors and business partners."/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0a0a0b;--surface:#111113;--border:#222226;--border2:#2e2e34;--gold:#c9a84c;--gold-dim:#7a6430;--text:#e8e8ec;--muted:#6c6c78;--muted2:#4a4a54;--white:#ffffff;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-weight:300;-webkit-font-smoothing:antialiased;}
+::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-track{background:var(--bg);}::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px;}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;background:rgba(10,10,11,0.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 40px;justify-content:space-between;}
+.topbar-logo{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;letter-spacing:0.12em;color:var(--white);text-decoration:none;}
+.topbar-right{display:flex;align-items:center;gap:16px;}
+.topbar-sub{font-size:11px;color:var(--muted);letter-spacing:0.06em;}
+.topbar-link{font-size:12px;font-weight:400;color:var(--muted);text-decoration:none;letter-spacing:0.06em;transition:color .18s;}
+.topbar-link:hover{color:var(--text);}
+.topbar-label{font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);padding:4px 14px;border-radius:2px;}
+.layout{display:flex;min-height:100vh;padding-top:56px;}
+.sidebar{width:268px;flex-shrink:0;position:sticky;top:56px;height:calc(100vh - 56px);overflow-y:auto;border-right:1px solid var(--border);padding:40px 0;}
+.sidebar-head{font-size:10px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--muted);padding:0 32px 18px;border-bottom:1px solid var(--border);margin-bottom:12px;}
+.nav-item{display:flex;align-items:center;gap:12px;padding:8px 32px;text-decoration:none;font-size:12.5px;font-weight:400;color:var(--muted);transition:color .18s,background .18s;border-left:2px solid transparent;line-height:1.4;}
+.nav-item:hover{color:var(--text);background:rgba(255,255,255,0.03);border-left-color:var(--border2);}
+.nav-item.active{color:var(--gold);border-left-color:var(--gold);background:rgba(201,168,76,0.05);}
+.nav-num{font-size:10px;font-weight:500;color:var(--muted2);min-width:20px;font-family:'Outfit',sans-serif;}
+.nav-divider{height:1px;background:var(--border);margin:12px 32px;}
+.content{flex:1;max-width:780px;padding:64px 72px 120px;animation:fadeUp .5s ease both;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+.hero{margin-bottom:72px;padding-bottom:52px;border-bottom:1px solid var(--border);}
+.hero-kicker{font-size:11px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5.5vw,62px);font-weight:600;line-height:1.05;color:var(--white);margin-bottom:8px;letter-spacing:-0.01em;}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;font-style:italic;color:var(--muted);margin-bottom:28px;letter-spacing:0.02em;}
+.hero-meta{display:flex;flex-wrap:wrap;gap:28px;margin-bottom:28px;}
+.meta-block dt{font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
+.meta-block dd{font-size:13.5px;font-weight:400;color:var(--text);}
+.hero-notice{background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.16);border-left:3px solid var(--gold);padding:16px 20px;font-size:13.5px;line-height:1.75;color:#b0b0bc;border-radius:0 2px 2px 0;}
+.hero-notice strong{color:var(--text);}
+.section{margin-bottom:64px;padding-bottom:64px;border-bottom:1px solid var(--border);opacity:0;animation:fadeUp .45s ease both;}
+.section:nth-child(1){animation-delay:.04s;}.section:nth-child(2){animation-delay:.08s;}.section:nth-child(3){animation-delay:.12s;}.section:nth-child(4){animation-delay:.15s;}.section:nth-child(5){animation-delay:.18s;}.section:nth-child(6){animation-delay:.21s;}.section:nth-child(7){animation-delay:.24s;}.section:nth-child(8){animation-delay:.27s;}.section:nth-child(9){animation-delay:.30s;}.section:nth-child(10){animation-delay:.33s;}.section:nth-child(11){animation-delay:.36s;}.section:nth-child(12){animation-delay:.38s;}.section:nth-child(13){animation-delay:.40s;}
+.section:last-of-type{border-bottom:none;}
+.section-header{display:flex;align-items:baseline;gap:16px;margin-bottom:26px;}
+.section-num{font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:400;color:var(--gold-dim);letter-spacing:0.1em;min-width:28px;}
+.section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2.6vw,26px);font-weight:600;color:var(--white);line-height:1.2;letter-spacing:-0.01em;}
+p{font-size:14.5px;line-height:1.88;color:#b0b0bc;margin-bottom:16px;}
+p:last-child{margin-bottom:0;}
+p strong{color:var(--text);font-weight:500;}
+a{color:var(--gold);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.sub-head{font-size:13px;font-weight:600;letter-spacing:0.06em;color:var(--text);margin:24px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+.clause-list{list-style:none;padding:0;margin:18px 0;border:1px solid var(--border);border-radius:4px;overflow:hidden;}
+.clause-list li{display:flex;border-bottom:1px solid var(--border);font-size:14px;color:#b0b0bc;line-height:1.75;}
+.clause-list li:last-child{border-bottom:none;}
+.clause-list li::before{content:attr(data-n);display:flex;align-items:flex-start;justify-content:center;min-width:50px;padding:13px 0;font-size:10.5px;font-weight:600;color:var(--gold);background:rgba(201,168,76,0.04);border-right:1px solid var(--border);font-family:'Outfit',sans-serif;letter-spacing:0.05em;flex-shrink:0;}
+.clause-list li span{padding:13px 20px;display:block;}
+.clause-list li strong{color:var(--text);font-weight:500;}
+.data-wrap{margin:22px 0;border:1px solid var(--border);border-radius:4px;overflow:hidden;overflow-x:auto;}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+thead tr{background:var(--surface);border-bottom:1px solid var(--border2);}
+thead th{padding:12px 16px;text-align:left;font-size:10px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);white-space:nowrap;}
+tbody td{padding:13px 16px;border-bottom:1px solid var(--border);color:#b0b0bc;vertical-align:top;line-height:1.65;}
+tbody tr:last-child td{border-bottom:none;}
+tbody tr:hover td{background:rgba(255,255,255,0.012);}
+tbody td strong{color:var(--text);font-weight:500;}
+.badge{display:inline-block;padding:2px 9px;border-radius:2px;font-size:9.5px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;white-space:nowrap;}
+.badge-req{background:rgba(224,82,82,0.1);color:#e05252;border:1px solid rgba(224,82,82,0.18);}
+.badge-opt{background:rgba(201,168,76,0.08);color:var(--gold);border:1px solid rgba(201,168,76,0.18);}
+.callout{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,0.022);border:1px solid var(--border2);border-radius:4px;padding:16px 18px;margin:20px 0;font-size:13.5px;line-height:1.75;color:#a0a0b0;}
+.callout-icon{font-size:15px;flex-shrink:0;margin-top:1px;}
+.callout strong{color:var(--text);font-weight:500;}
+.callout.warn{background:rgba(201,168,76,0.04);border-color:rgba(201,168,76,0.2);}
+.callout.info{background:rgba(60,120,220,0.05);border-color:rgba(60,120,220,0.18);}
+.model-card{border:1px solid var(--border2);border-radius:4px;overflow:hidden;margin:20px 0;}
+.model-card-head{background:rgba(201,168,76,0.06);border-bottom:1px solid var(--border2);padding:14px 20px;display:flex;align-items:center;gap:12px;}
+.model-card-head .mc-label{font-size:10px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);}
+.model-card-head .mc-title{font-size:14px;font-weight:500;color:var(--text);}
+.model-card-body{padding:16px 20px;font-size:13.5px;color:#b0b0bc;line-height:1.8;}
+.model-card-body strong{color:var(--text);}
+.contact-block{margin-top:22px;background:var(--surface);border:1px solid var(--border2);border-top:2px solid var(--gold);border-radius:0 0 4px 4px;padding:28px 32px;}
+.contact-block .co-label{font-size:10px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.contact-row{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);font-size:13.5px;}
+.contact-row:last-child{border-bottom:none;}
+.contact-row .cr-key{color:var(--muted);min-width:100px;font-size:11.5px;padding-top:1px;}
+.contact-row .cr-val{color:var(--text);}
+footer{border-top:1px solid var(--border);padding:28px 72px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:11.5px;color:var(--muted2);letter-spacing:0.04em;margin-left:268px;}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;color:var(--muted);letter-spacing:0.1em;}
+footer a{color:var(--muted);text-decoration:none;}
+footer a:hover{color:var(--text);}
+@media(max-width:880px){
+  .sidebar{display:none;}
+  .content{padding:44px 24px 80px;max-width:100%;}
+  footer{margin-left:0;padding:24px;}
+  .topbar{padding:0 20px;}
+  .topbar-sub,.topbar-link{display:none;}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="https://aelvra.in" class="topbar-logo">AELVRA</a>
+  <div class="topbar-right">
+    <span class="topbar-sub">aelvra.in</span>
+    <a href="terms-and-conditions.html" class="topbar-link">Terms &amp; Conditions</a>
+    <span class="topbar-label">Privacy Policy</span>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="sidebar">
+    <div class="sidebar-head">Contents</div>
+    <a class="nav-item active" href="#s1"><span class="nav-num">01</span>Scope &amp; Identity</a>
+    <a class="nav-item" href="#s2"><span class="nav-num">02</span>Our Business Models</a>
+    <a class="nav-item" href="#s3"><span class="nav-num">03</span>Information Collected</a>
+    <a class="nav-item" href="#s4"><span class="nav-num">04</span>Purpose of Processing</a>
+    <a class="nav-item" href="#s5"><span class="nav-num">05</span>Disclosure of Data</a>
+    <a class="nav-item" href="#s6"><span class="nav-num">06</span>Storage &amp; Security</a>
+    <a class="nav-item" href="#s7"><span class="nav-num">07</span>Partner &amp; Client Data</a>
+    <a class="nav-item" href="#s8"><span class="nav-num">08</span>Third-Party Services</a>
+    <a class="nav-item" href="#s9"><span class="nav-num">09</span>Cookies &amp; Analytics</a>
+    <a class="nav-item" href="#s10"><span class="nav-num">10</span>Your Rights (DPDP)</a>
+    <a class="nav-item" href="#s11"><span class="nav-num">11</span>Data Retention</a>
+    <a class="nav-item" href="#s12"><span class="nav-num">12</span>Minors</a>
+    <a class="nav-item" href="#s13"><span class="nav-num">13</span>Amendments</a>
+    <a class="nav-item" href="#s14"><span class="nav-num">14</span>Contact &amp; Grievance</a>
+    <div class="nav-divider"></div>
+    <a class="nav-item" href="terms-and-conditions.html"><span class="nav-num">↗</span>Terms &amp; Conditions</a>
+    <a class="nav-item" href="https://aelvra.in"><span class="nav-num">↗</span>Back to aelvra.in</a>
+  </nav>
+
+  <main class="content">
+    <div class="hero">
+      <div class="hero-kicker">Legal Document · aelvra.in</div>
+      <h1>Privacy<br/>Policy</h1>
+      <div class="hero-sub">Aelvra — Technology Partner &amp; App Development</div>
+      <div class="hero-meta">
+        <dl class="meta-block"><dt>Effective Date</dt><dd>27 March 2026</dd></dl>
+        <dl class="meta-block"><dt>Last Revised</dt><dd>27 March 2026</dd></dl>
+        <dl class="meta-block"><dt>Governing Law</dt><dd>Republic of India</dd></dl>
+        <dl class="meta-block"><dt>Version</dt><dd>1.1</dd></dl>
+      </div>
+      <div class="hero-notice">
+        By accessing <strong>aelvra.in</strong> or engaging Aelvra's services in any capacity, you acknowledge that you have read, understood, and agree to this Privacy Policy. This Policy applies to all website visitors, business partners, and clients engaging Aelvra under either of its service models. <strong>This Policy constitutes a legally binding document under applicable Indian law.</strong>
+      </div>
+    </div>
+
+    <!-- 01 -->
+    <section class="section" id="s1">
+      <div class="section-header"><span class="section-num">01</span><h2>Scope &amp; Identity of the Data Controller</h2></div>
+      <p>This Privacy Policy ("Policy") governs the collection, processing, storage, and disclosure of personal data by <strong>Aelvra</strong> ("we", "us", or "our") — a technology services company operating at <strong>aelvra.in</strong> that provides custom application development and technology partnership services to businesses across India.</p>
+      <p>This Policy applies to:</p>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Website Visitors:</strong> Any individual who browses or accesses aelvra.in.</span></li>
+        <li data-n="(b)"><span><strong>Business Partners (SaaS Model):</strong> Any business that engages Aelvra as a technology partner — where Aelvra builds, owns, and operates the application on the partner's behalf in exchange for a commission and recurring fees.</span></li>
+        <li data-n="(c)"><span><strong>Clients (Custom Build Model):</strong> Any business or individual that commissions Aelvra to build a fully custom application which, upon fulfilment of agreed conditions, becomes the client's own property.</span></li>
+      </ul>
+      <p>Aelvra acts as the <strong>Data Controller</strong> for data collected through aelvra.in and within applications operated under the SaaS / Technology Partner model. For applications transferred to clients under the Custom Build model, the respective client becomes the Data Controller for their application's end-users from the point of handover.</p>
+    </section>
+
+    <!-- 02 -->
+    <section class="section" id="s2">
+      <div class="section-header"><span class="section-num">02</span><h2>Our Business Models</h2></div>
+      <p>Aelvra operates under two distinct service models, each with different implications for data ownership and responsibility:</p>
+
+      <div class="model-card">
+        <div class="model-card-head">
+          <span class="mc-label">Model A</span>
+          <span class="mc-title">Technology Partnership (SaaS)</span>
+        </div>
+        <div class="model-card-body">
+          Aelvra designs, builds, and <strong>retains ownership</strong> of the application. The business partner uses the application under an ongoing agreement. Aelvra manages all hosting, infrastructure, and maintenance. The partner pays a <strong>commission on transactions and/or recurring service fees</strong> as agreed. Server costs and operational charges are borne by the partner as part of the partnership terms. <strong>Aelvra remains the platform operator and Data Controller</strong> for all end-user data within the application throughout the partnership.
+        </div>
+      </div>
+
+      <div class="model-card">
+        <div class="model-card-head">
+          <span class="mc-label">Model B</span>
+          <span class="mc-title">Custom Build (One-Time Development)</span>
+        </div>
+        <div class="model-card-body">
+          Aelvra designs and builds a fully custom application for the client. Upon fulfilment of the agreed payment and conditions, the application and (where stipulated) the source code are transferred to the client. <strong>The client becomes the sole owner</strong> of the application post-handover. The client may choose to engage Aelvra for ongoing maintenance, or may engage any other party. <strong>If the client engages a third party for maintenance post-handover, Aelvra will no longer provide any technical support, maintenance, or updates for that application.</strong> After handover, the client becomes the Data Controller for all end-user data.
+        </div>
+      </div>
+
+      <div class="callout warn">
+        <span class="callout-icon">§</span>
+        <div>Each deployed application — regardless of model — has its own dedicated Privacy Policy covering that application's end-users, published at the relevant path on aelvra.in or the client's domain.</div>
+      </div>
+    </section>
+
+    <!-- 03 -->
+    <section class="section" id="s3">
+      <div class="section-header"><span class="section-num">03</span><h2>Information Collected</h2></div>
+
+      <div class="sub-head">From Website Visitors</div>
+      <div class="data-wrap">
+        <table>
+          <thead><tr><th>Data Type</th><th>How Collected</th><th>Required?</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Name</strong></td><td>Email enquiry</td><td><span class="badge badge-opt">Optional</span></td></tr>
+            <tr><td><strong>Email Address</strong></td><td>Email enquiry</td><td><span class="badge badge-req">Required</span></td></tr>
+            <tr><td><strong>Business Name / Project Info</strong></td><td>Email enquiry</td><td><span class="badge badge-opt">Optional</span></td></tr>
+            <tr><td><strong>IP Address &amp; Browser Data</strong></td><td>Automatically on visit</td><td><span class="badge badge-opt">Automatic</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sub-head">From Business Partners &amp; Clients</div>
+      <div class="data-wrap">
+        <table>
+          <thead><tr><th>Data Type</th><th>Purpose</th><th>Required?</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Full Name / Business Name</strong></td><td>Onboarding, legal documentation</td><td><span class="badge badge-req">Required</span></td></tr>
+            <tr><td><strong>Email &amp; Phone / WhatsApp</strong></td><td>Communication &amp; project coordination</td><td><span class="badge badge-req">Required</span></td></tr>
+            <tr><td><strong>Business Address</strong></td><td>Legal compliance &amp; documentation</td><td><span class="badge badge-req">Required</span></td></tr>
+            <tr><td><strong>Project Requirements &amp; Assets</strong></td><td>Application development</td><td><span class="badge badge-req">Required</span></td></tr>
+            <tr><td><strong>Financial / Billing Information</strong></td><td>Invoicing &amp; fee processing</td><td><span class="badge badge-req">Required</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 04 -->
+    <section class="section" id="s4">
+      <div class="section-header"><span class="section-num">04</span><h2>Purpose of Processing</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Service Delivery:</strong> To design, develop, deploy, and operate applications as agreed under the applicable service model.</span></li>
+        <li data-n="(b)"><span><strong>Partnership Management:</strong> To manage ongoing SaaS partnerships — including commission tracking, server cost billing, performance monitoring, and maintenance operations.</span></li>
+        <li data-n="(c)"><span><strong>Client Communication:</strong> To communicate project updates, technical information, invoices, and support matters.</span></li>
+        <li data-n="(d)"><span><strong>Enquiry Response:</strong> To respond to prospective client and partner enquiries received via email.</span></li>
+        <li data-n="(e)"><span><strong>Billing &amp; Compliance:</strong> To issue invoices, track payments, and maintain financial records as required under Indian accounting and GST regulations.</span></li>
+        <li data-n="(f)"><span><strong>Security &amp; Infrastructure:</strong> To maintain the integrity, availability, and security of Aelvra's platform and hosted applications.</span></li>
+        <li data-n="(g)"><span><strong>Website Analytics:</strong> To understand general usage of aelvra.in through anonymised, aggregated data. No individual visitor profiling occurs.</span></li>
+      </ul>
+      <p>Aelvra does <strong>not</strong> use personal data for advertising, third-party marketing, or sale to any external party.</p>
+    </section>
+
+    <!-- 05 -->
+    <section class="section" id="s5">
+      <div class="section-header"><span class="section-num">05</span><h2>Disclosure of Data</h2></div>
+      <p>Aelvra does not sell, rent, or trade personal data. Limited disclosure occurs only in the following circumstances:</p>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Infrastructure Providers:</strong> Cloud and server providers used to host aelvra.in and partner applications. These providers operate under contractual data processing obligations.</span></li>
+        <li data-n="(b)"><span><strong>Payment Processors:</strong> Payment gateway providers for processing invoices and fee transactions. Aelvra does not store payment card details.</span></li>
+        <li data-n="(c)"><span><strong>Legal Obligations:</strong> Where required by applicable Indian law, court order, or lawful government authority request.</span></li>
+        <li data-n="(d)"><span><strong>Handover to Client (Custom Build):</strong> Upon project completion under the Custom Build model, all project assets and relevant data are transferred to the client as agreed. Aelvra retains no copies beyond legal compliance requirements.</span></li>
+      </ul>
+    </section>
+
+    <!-- 06 -->
+    <section class="section" id="s6">
+      <div class="section-header"><span class="section-num">06</span><h2>Storage &amp; Security</h2></div>
+      <p>All data is stored on servers located within the <strong>Republic of India</strong>, on <strong>ISO 27001 certified infrastructure in Mumbai, India</strong>.</p>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Encryption in Transit:</strong> All data transmitted between users, partners, and Aelvra's servers is encrypted via HTTPS/TLS.</span></li>
+        <li data-n="(b)"><span><strong>Access Controls:</strong> Access to partner and client data is restricted to authorised Aelvra personnel on a strict need-to-know basis.</span></li>
+        <li data-n="(c)"><span><strong>Data Isolation:</strong> Each partner's application data is maintained in logically isolated environments to prevent cross-partner exposure.</span></li>
+        <li data-n="(d)"><span><strong>Breach Notification:</strong> In the event of a data breach affecting personal data, Aelvra will notify affected parties as required under applicable Indian law.</span></li>
+      </ul>
+    </section>
+
+    <!-- 07 -->
+    <section class="section" id="s7">
+      <div class="section-header"><span class="section-num">07</span><h2>Partner &amp; Client Data Handling</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Confidentiality:</strong> All business information, project assets, branding, and data shared by partners or clients is treated as strictly confidential and will not be disclosed to any third party without explicit written consent.</span></li>
+        <li data-n="(b)"><span><strong>SaaS Model — Ongoing Data Custody:</strong> Under the Technology Partnership model, Aelvra retains custody of application data for the duration of the active partnership. Data is used solely to operate, maintain, and improve the partner's application.</span></li>
+        <li data-n="(c)"><span><strong>Custom Build — Data Transfer:</strong> Upon full handover under the Custom Build model, the client assumes complete responsibility for all data within the application. Aelvra's data obligations for that application cease from the point of handover.</span></li>
+        <li data-n="(d)"><span><strong>Post-Handover (Custom Build):</strong> Once an application has been handed over under the Custom Build model and the client has engaged a third party for maintenance, Aelvra has no access to, responsibility for, or obligation regarding data within that application.</span></li>
+      </ul>
+    </section>
+
+    <!-- 08 -->
+    <section class="section" id="s8">
+      <div class="section-header"><span class="section-num">08</span><h2>Third-Party Services</h2></div>
+      <p>Aelvra integrates third-party services into the applications it builds. Their use within specific applications is governed by that application's own Privacy Policy.</p>
+      <div class="data-wrap">
+        <table>
+          <thead><tr><th>Service</th><th>Purpose</th><th>Data Involved</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Razorpay</strong></td><td>Payment processing</td><td>Transaction data (processed by Razorpay; not stored by Aelvra)</td></tr>
+            <tr><td><strong>Firebase (Google)</strong></td><td>Push notifications, real-time sync</td><td>Device tokens, notification events</td></tr>
+            <tr><td><strong>Google Maps Platform</strong></td><td>Location &amp; mapping features</td><td>Location data (user-enabled)</td></tr>
+            <tr><td><strong>Hosting Infrastructure</strong></td><td>Application servers</td><td>Encrypted application data, server logs</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 09 -->
+    <section class="section" id="s9">
+      <div class="section-header"><span class="section-num">09</span><h2>Cookies &amp; Analytics</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>No Advertising Cookies:</strong> aelvra.in does not use advertising cookies, retargeting pixels, or cross-site tracking technologies.</span></li>
+        <li data-n="(b)"><span><strong>Analytics:</strong> Anonymised, aggregated analytics may be used to understand general traffic patterns on aelvra.in. No individual visitor profiling occurs.</span></li>
+        <li data-n="(c)"><span><strong>Essential Only:</strong> Any technical cookies used on aelvra.in are strictly necessary for website functionality.</span></li>
+      </ul>
+    </section>
+
+    <!-- 10 -->
+    <section class="section" id="s10">
+      <div class="section-header"><span class="section-num">10</span><h2>Your Rights Under DPDP Act 2023</h2></div>
+      <p>As a <strong>Data Principal</strong> under the Digital Personal Data Protection Act, 2023, you are entitled to exercise the following rights regarding personal data held by Aelvra:</p>
+      <div class="data-wrap">
+        <table>
+          <thead><tr><th>Right</th><th>Description</th><th>How to Exercise</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Right of Access</strong></td><td>Request a copy of all personal data Aelvra holds about you.</td><td>Email <a href="mailto:support@aelvra.in">support@aelvra.in</a></td></tr>
+            <tr><td><strong>Right to Correction</strong></td><td>Request correction of inaccurate personal data.</td><td>Email <a href="mailto:support@aelvra.in">support@aelvra.in</a></td></tr>
+            <tr><td><strong>Right to Erasure</strong></td><td>Request deletion of your data, subject to legal retention obligations.</td><td>Email <a href="mailto:support@aelvra.in">support@aelvra.in</a></td></tr>
+            <tr><td><strong>Right to Portability</strong></td><td>Request your data in a structured, readable format.</td><td>Email <a href="mailto:support@aelvra.in">support@aelvra.in</a></td></tr>
+            <tr><td><strong>Right to Withdraw Consent</strong></td><td>Withdraw consent for specific processing activities.</td><td>Email <a href="mailto:support@aelvra.in">support@aelvra.in</a></td></tr>
+            <tr><td><strong>Right to Grievance Redressal</strong></td><td>Raise concerns about misuse or unlawful processing.</td><td>Email <a href="mailto:support@aelvra.in">support@aelvra.in</a> — <strong>48-hour response</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout warn">
+        <span class="callout-icon">§</span>
+        <div><strong>Retention Notice:</strong> Billing and invoice records must be retained for a minimum of <strong>3 years</strong> under Indian accounting law and cannot be deleted during this mandatory period.</div>
+      </div>
+    </section>
+
+    <!-- 11 -->
+    <section class="section" id="s11">
+      <div class="section-header"><span class="section-num">11</span><h2>Data Retention</h2></div>
+      <ul class="clause-list">
+        <li data-n="(a)"><span><strong>Website Visitor Enquiries:</strong> Retained for up to <strong>2 years</strong> from last communication, unless an engagement begins.</span></li>
+        <li data-n="(b)"><span><strong>Active Partner / Client Data:</strong> Retained for the full duration of the active engagement.</span></li>
+        <li data-n="(c)"><span><strong>Post-Engagement Records:</strong> Billing, invoice, and legal records retained for a minimum of <strong>3 years</strong> post-engagement as required under Indian law.</span></li>
+        <li data-n="(d)"><span><strong>Project Assets (Custom Build):</strong> Returned or deleted within <strong>90 days</strong> of handover or on written request by the client, whichever is earlier.</span></li>
+        <li data-n="(e)"><span><strong>Application End-User Data (SaaS):</strong> Retained for the duration of the active partnership. Upon partnership termination, data handling follows the terms of the individual application's Privacy Policy.</span></li>
+      </ul>
+    </section>
+
+    <!-- 12 -->
+    <section class="section" id="s12">
+      <div class="section-header"><span class="section-num">12</span><h2>Minors</h2></div>
+      <p>Aelvra's services are directed at <strong>businesses and adult individuals (18 years and above)</strong>. Aelvra does not knowingly collect personal data from individuals below 18 years of age. If you believe a minor has submitted personal data to Aelvra, please notify us at <a href="mailto:support@aelvra.in">support@aelvra.in</a> and we will take prompt steps to delete such information.</p>
+    </section>
+
+    <!-- 13 -->
+    <section class="section" id="s13">
+      <div class="section-header"><span class="section-num">13</span><h2>Amendments to This Policy</h2></div>
+      <p>Aelvra reserves the right to revise this Policy at any time. Updated versions will be published at <a href="https://aelvra.in/privacy-policy.html">aelvra.in/privacy-policy.html</a> with a revised effective date. Material changes affecting active partners or clients will be communicated via email prior to the effective date. Continued engagement with Aelvra's services after any revision constitutes acceptance of the updated Policy.</p>
+    </section>
+
+    <!-- 14 -->
+    <section class="section" id="s14">
+      <div class="section-header"><span class="section-num">14</span><h2>Contact &amp; Grievance Redressal</h2></div>
+      <p>For any privacy-related queries, data requests, or grievances regarding this Policy, please contact Aelvra at:</p>
+      <div class="contact-block">
+        <div class="co-label">Aelvra — Privacy Contact</div>
+        <div class="contact-row"><span class="cr-key">Email (Privacy)</span><span class="cr-val"><a href="mailto:support@aelvra.in">support@aelvra.in</a></span></div>
+        <div class="contact-row"><span class="cr-key">Email (General)</span><span class="cr-val"><a href="mailto:contact@aelvra.in">contact@aelvra.in</a></span></div>
+        <div class="contact-row"><span class="cr-key">Website</span><span class="cr-val"><a href="https://aelvra.in">aelvra.in</a></span></div>
+        <div class="contact-row"><span class="cr-key">Response Time</span><span class="cr-val">48 hours for grievances · 7 business days for general queries</span></div>
+        <div class="contact-row"><span class="cr-key">Jurisdiction</span><span class="cr-val">Republic of India — DPDP Act, 2023 &amp; IT Act, 2000</span></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <span class="footer-logo">AELVRA</span>
+  <div style="display:flex;gap:20px;flex-wrap:wrap;">
+    <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+    <a href="https://aelvra.in">aelvra.in</a>
+    <a href="mailto:support@aelvra.in">support@aelvra.in</a>
+    <a href="mailto:contact@aelvra.in">contact@aelvra.in</a>
+  </div>
+  <span>© 2026 Aelvra. All rights reserved.</span>
+</footer>
+
+<script>
+const sections = document.querySelectorAll('section[id]');
+const navItems = document.querySelectorAll('.nav-item[href^="#"]');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navItems.forEach(n => n.classList.remove('active'));
+      const active = document.querySelector(`.nav-item[href="#${entry.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
