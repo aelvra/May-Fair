@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Privacy Policy — ArixQ Calc</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bg:#0a0a0b;--surface:#111113;--border:#222226;--border2:#2e2e34;
+  --gold:#c9a84c;--gold-dim:#7a6430;--text:#e8e8ec;--muted:#6c6c78;
+  --muted2:#4a4a54;--white:#ffffff;
+  --blue:#5b8dee;--blue-dim:rgba(91,141,238,0.08);--blue-border:rgba(91,141,238,0.22);
+  --green:#4caf7d;--green-dim:rgba(76,175,125,0.08);--green-border:rgba(76,175,125,0.25);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-weight:300;-webkit-font-smoothing:antialiased;}
+::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-track{background:var(--bg);}::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px;}
+
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;background:rgba(10,10,11,0.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 40px;justify-content:space-between;}
+.topbar-logo{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;letter-spacing:0.12em;color:var(--white);text-decoration:none;}
+.topbar-label{font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--blue);background:var(--blue-dim);border:1px solid var(--blue-border);padding:4px 14px;border-radius:2px;}
+
+.layout{display:flex;min-height:100vh;padding-top:56px;}
+
+.sidebar{width:260px;flex-shrink:0;position:sticky;top:56px;height:calc(100vh - 56px);overflow-y:auto;border-right:1px solid var(--border);padding:40px 0;}
+.sidebar-head{font-size:10px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--muted);padding:0 32px 18px;border-bottom:1px solid var(--border);margin-bottom:12px;}
+.nav-item{display:flex;align-items:center;gap:12px;padding:8px 32px;text-decoration:none;font-size:12.5px;font-weight:400;color:var(--muted);transition:color .18s,background .18s;border-left:2px solid transparent;line-height:1.4;}
+.nav-item:hover{color:var(--text);background:rgba(255,255,255,0.03);border-left-color:var(--border2);}
+.nav-item.active{color:var(--blue);border-left-color:var(--blue);background:var(--blue-dim);}
+.nav-num{font-size:10px;color:var(--muted2);min-width:20px;}
+.sidebar-divider{height:1px;background:var(--border);margin:16px 0;}
+.sidebar-other{padding:12px 32px 6px;font-size:10px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted2);}
+
+.content{flex:1;max-width:680px;padding:64px 72px 120px;animation:fadeUp .5s ease both;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+
+.hero{margin-bottom:52px;padding-bottom:44px;border-bottom:1px solid var(--border);}
+.hero-kicker{font-size:11px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--blue);margin-bottom:16px;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,54px);font-weight:600;line-height:1.08;color:var(--white);margin-bottom:14px;letter-spacing:-0.01em;}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;color:var(--muted);margin-bottom:24px;line-height:1.5;}
+.hero-meta{display:flex;gap:28px;flex-wrap:wrap;}
+.meta-item{font-size:12px;color:var(--muted);letter-spacing:0.03em;}
+.meta-item strong{color:#c8c8d0;font-weight:500;}
+
+.section{margin-bottom:44px;scroll-margin-top:80px;}
+.section-header{display:flex;align-items:baseline;gap:14px;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--border);}
+.section-num{font-family:'Cormorant Garamond',serif;font-size:12px;color:var(--blue);letter-spacing:0.1em;min-width:26px;}
+.section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(17px,2.2vw,21px);font-weight:600;color:var(--white);line-height:1.2;}
+
+p{font-size:14px;line-height:1.9;color:#a8a8b8;margin-bottom:14px;}
+p:last-child{margin-bottom:0;}
+p strong{color:#d0d0dc;font-weight:500;}
+a{color:var(--blue);text-decoration:none;}
+a:hover{opacity:0.75;}
+
+.callout{display:flex;gap:14px;align-items:flex-start;border-radius:3px;padding:15px 18px;margin:18px 0;font-size:13.5px;line-height:1.75;color:#a0a8b0;}
+.callout.green{background:var(--green-dim);border:1px solid var(--green-border);}
+.callout.blue{background:var(--blue-dim);border:1px solid var(--blue-border);}
+.callout-icon{font-size:15px;flex-shrink:0;margin-top:2px;}
+
+.check-list{list-style:none;margin:14px 0;display:flex;flex-direction:column;gap:8px;}
+.check-list li{font-size:14px;color:#a8a8b8;padding-left:22px;position:relative;line-height:1.6;}
+.check-list li::before{content:'✓';position:absolute;left:0;color:var(--green);font-size:12px;top:2px;}
+
+.divider{height:1px;background:var(--border);margin:8px 0 36px;}
+
+footer{border-top:1px solid var(--border);padding:26px 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:600;letter-spacing:0.12em;color:var(--muted2);}
+footer span{font-size:12px;color:var(--muted2);}
+footer a{color:var(--muted);font-size:12px;text-decoration:none;transition:color .18s;}
+footer a:hover{color:var(--text);}
+
+@media(max-width:768px){
+  .topbar{padding:0 20px;}
+  .sidebar{display:none;}
+  .content{padding:36px 22px 80px;}
+  footer{padding:22px 20px;flex-direction:column;text-align:center;gap:8px;}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <span class="topbar-logo">ARIXQ CALC</span>
+  <span class="topbar-label">Privacy Policy</span>
+</header>
+
+<div class="layout">
+  <nav class="sidebar">
+    <div class="sidebar-head">On This Page</div>
+    <a class="nav-item active" href="#collection"><span class="nav-num">01</span>Data Collection</a>
+    <a class="nav-item" href="#storage"><span class="nav-num">02</span>Local Storage</a>
+    <a class="nav-item" href="#internet"><span class="nav-num">03</span>Internet Usage</a>
+    <a class="nav-item" href="#children"><span class="nav-num">04</span>Children</a>
+    <a class="nav-item" href="#changes"><span class="nav-num">05</span>Policy Changes</a>
+    <a class="nav-item" href="#contact"><span class="nav-num">06</span>Contact</a>
+    <div class="sidebar-divider"></div>
+    <div class="sidebar-other">Also</div>
+    <a class="nav-item" href="term&condition.html"><span class="nav-num">—</span>Terms &amp; Conditions</a>
+  </nav>
+
+  <main class="content">
+
+    <div class="hero">
+      <div class="hero-kicker">ArixQ Calc · Aelvra</div>
+      <h1>Privacy Policy</h1>
+      <p class="hero-sub">Simple, honest, and complete — your privacy matters to us.</p>
+      <div class="hero-meta">
+        <span class="meta-item"><strong>Developer:</strong> Aelvra</span>
+        <span class="meta-item"><strong>Last Updated:</strong> March 28, 2026</span>
+      </div>
+    </div>
+
+    <!-- 01 -->
+    <div class="section" id="collection">
+      <div class="section-header"><span class="section-num">01</span><h2>Data Collection</h2></div>
+      <div class="callout green">
+        <span class="callout-icon">✓</span>
+        <div><strong>ArixQ Calc does not collect any personal information.</strong> No accounts, no sign-ups, no tracking of any kind.</div>
+      </div>
+      <p>This application was built with a privacy-first approach. We do not collect, store, or transmit any personally identifiable information (PII) from your device to our servers — because we have none.</p>
+      <ul class="check-list">
+        <li>No analytics or usage tracking</li>
+        <li>No advertising or ad networks</li>
+        <li>No account or login required</li>
+        <li>No personal data transmitted to any server</li>
+      </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 02 -->
+    <div class="section" id="storage">
+      <div class="section-header"><span class="section-num">02</span><h2>Local Storage</h2></div>
+      <p>All data generated by your use of the app — such as calculation history and your personal preferences — is stored <strong>only on your own device</strong>. This data never leaves your device and is never accessible to us.</p>
+      <p>You can clear this data at any time from within the app. If you uninstall the app, all locally stored data is permanently and irreversibly deleted. We have no copy of it and cannot recover it.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 03 -->
+    <div class="section" id="internet">
+      <div class="section-header"><span class="section-num">03</span><h2>Internet Usage</h2></div>
+      <p>ArixQ Calc uses an internet connection solely to fetch <strong>live currency exchange rates</strong> from publicly available sources. This is the only network activity the app performs.</p>
+      <p>When your device makes a request to fetch these rates, your IP address is technically visible to the rate provider as part of standard internet communication — this is inherent to how the internet works and is not a data collection practice on our part. We do not log, store, or process any such information.</p>
+      <div class="callout blue">
+        <span class="callout-icon">ℹ</span>
+        <div>Currency rates are fetched for conversion purposes only and are <strong>not financial advice</strong>. Rates may not reflect real-time market conditions.</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 04 -->
+    <div class="section" id="children">
+      <div class="section-header"><span class="section-num">04</span><h2>Children's Privacy</h2></div>
+      <p>ArixQ Calc does not knowingly collect information from anyone, including children under the age of 13. Because no personal data is collected at all, the app is safe for users of all ages.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 05 -->
+    <div class="section" id="changes">
+      <div class="section-header"><span class="section-num">05</span><h2>Policy Changes</h2></div>
+      <p>We may update this Privacy Policy from time to time. Any changes will be reflected by updating the <strong>Last Updated</strong> date at the top of this page. Continued use of the app after any update constitutes your acceptance of the revised policy.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 06 -->
+    <div class="section" id="contact">
+      <div class="section-header"><span class="section-num">06</span><h2>Contact</h2></div>
+      <p>If you have any questions or concerns about this Privacy Policy, please reach out:</p>
+      <div class="callout blue">
+        <span class="callout-icon">✉</span>
+        <div>
+          <strong>Aelvra</strong><br>
+          Support: <a href="mailto:support@aelvra.in">support@aelvra.in</a><br>
+          General: <a href="mailto:contact@aelvra.in">contact@aelvra.in</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<footer>
+  <span class="footer-logo">ARIXQ CALC</span>
+  <span><a href="term&condition.html">Terms &amp; Conditions</a></span>
+  <span><a href="mailto:support@aelvra.in">support@aelvra.in</a></span>
+  <span>© 2026 Aelvra. All rights reserved.</span>
+</footer>
+
+<script>
+const sections = document.querySelectorAll('.section[id]');
+const navItems = document.querySelectorAll('.nav-item[href^="#"]');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navItems.forEach(item => {
+    item.classList.remove('active');
+    if (item.getAttribute('href') === '#' + current) {
+      item.classList.add('active');
+    }
+  });
+});
+</script>
